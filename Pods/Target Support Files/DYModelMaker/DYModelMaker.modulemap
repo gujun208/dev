@@ -1,0 +1,6 @@
+framework module DYModelMaker {
+  umbrella header "DYModelMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

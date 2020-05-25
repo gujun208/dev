@@ -1,11 +1,21 @@
 # Uncomment the next line to define a global platform for your project
-source 'https://github.com/CocoaPods/Specs.git'
-# platform :ios, '9.0'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+ platform :ios, '9.0'
 
 target 'exhibition' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
     pod 'Toast','~>3.0'
+    pod 'MJRefresh',:inhibit_warnings => true
+    pod 'MJExtension',:inhibit_warnings => true
+    pod 'Masonry',:inhibit_warnings => true
+    pod 'TZImagePickerController',:inhibit_warnings => true
+    pod 'DZNEmptyDataSet',:inhibit_warnings => true
+    pod 'DYModelMaker',:inhibit_warnings => true
+    pod 'PPNetworkHelper',:inhibit_warnings => true
+    pod 'YYText'
+    pod 'SDCycleScrollView'
+
   # Pods for exhibition
 
   target 'exhibitionTests' do
