@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>HomePageViewController</string>
+		<key>icon</key>
+		<string>Home</string>
+		<key>selectIcon</key>
+		<string>home_select</string>
+		<key>title</key>
+		<string>首页</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>ShopViewController</string>
+		<key>icon</key>
+		<string>GongNengGuanLi</string>
+		<key>selectIcon</key>
+		<string>GongNengGuanLi_select</string>
+		<key>title</key>
+		<string>商场</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MyViewController</string>
+		<key>icon</key>
+		<string>KeHuGuanLi</string>
+		<key>selectIcon</key>
+		<string>KeHuGuanLi_select</string>
+		<key>title</key>
+		<string>我的</string>
+	</dict>
+</array>
+</plist>
