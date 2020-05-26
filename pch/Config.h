@@ -12,6 +12,19 @@
 #import "Tool.h"
 #import "UIColor+Hex.h"
 #import "CALayer+XibConfiguration.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "iToast.h"
+#import "RootViewController.h"
+#import "TabBarViewController.h"
+#import "ZHUserModel.h"
+#import "UIView+FrameSimplify.h"
+#import "UILabel+Adapter.h"
+#import "UIButton+Adapter.h"
+#import "NSLayoutConstraint+IBDesignable.h"
+#import "DYModelMaker.h"
+#import "ZHModel.h"
+#import "DAConfig.h"
 
 //屏幕大小
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
@@ -40,7 +53,7 @@
 //颜色
 #define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
-//x判断当前q系统
+//判断当前系统
 #define IOS8_OR_LATER        ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
 
 //当前版本
@@ -68,5 +81,7 @@
 #define font16 [UIFont systemFontOfSize:16*myX6]
 
 #define PageSize 20  //上拉加载下拉刷新的pagesize
+
+#define TOKEN  @"Authorization"
 
 #endif /* Config_h */

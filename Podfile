@@ -15,6 +15,7 @@ target 'exhibition' do
     pod 'PPNetworkHelper',:inhibit_warnings => true
     pod 'YYText'
     pod 'SDCycleScrollView'
+    pod 'ZXingObjC',:inhibit_warnings => true
 
   # Pods for exhibition
 

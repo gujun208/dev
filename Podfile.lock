@@ -31,6 +31,9 @@ PODS:
   - TZImagePickerController (3.3.1)
   - YYCache (1.0.4)
   - YYText (1.0.7)
+  - ZXingObjC (3.6.5):
+    - ZXingObjC/All (= 3.6.5)
+  - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
   - DYModelMaker
@@ -43,6 +46,7 @@ DEPENDENCIES:
   - Toast (~> 3.0)
   - TZImagePickerController
   - YYText
+  - ZXingObjC
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
@@ -59,6 +63,7 @@ SPEC REPOS:
     - TZImagePickerController
     - YYCache
     - YYText
+    - ZXingObjC
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -74,7 +79,8 @@ SPEC CHECKSUMS:
   TZImagePickerController: 99f03b64145a8c92c55b9b1b931410967d9be4cb
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 3571c5298c5b2f57a2390a08b9797dee19a43ee3
+PODFILE CHECKSUM: 0777d6b9e9daa884ef2ae612b2554a3f36f79680
 
 COCOAPODS: 1.9.2

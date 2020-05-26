@@ -19,10 +19,12 @@
     // Do any additional setup after loading the view.
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 100, 200, 50);
+    btn.frame = CGRectMake(100, 100, 100, 50);
     [btn setTitle:@"首页" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
 }
+- (void)requestData{
 
+}
 @end

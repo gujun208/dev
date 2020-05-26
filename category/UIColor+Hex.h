@@ -1,9 +1,9 @@
 //
 //  UIColor+Hex.h
-//  Field_ijovo
+//  exhibition
 //
-//  Created by 吴柳燕 on 16/4/22.
-//  Copyright © 2016年 wly. All rights reserved.
+//  Created by 古军 on 2020/5/26.
+//  Copyright © 2020年 wly. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

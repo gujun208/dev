@@ -24,6 +24,8 @@
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
 
+//    [DAConfig setUserLanguage:@"zh-Hans"];
+//    [DAConfig setUserLanguage:@"en"];
 }
 
 /*

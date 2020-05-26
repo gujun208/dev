@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  exhibition
+
+  Created by 古军 on 2020/5/26.
+  Copyright © 2020 exhibition. All rights reserved.
+*/
+"cancel" = "取消";
+"confirm" = "确定";
