@@ -48,8 +48,8 @@
         UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
         vc.navigationController.navigationBar.tintColor = [UIColor whiteColor];
         //导航字体颜色
-        vc.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:17],NSFontAttributeName,DEFAULTFONTMAINCOLOR, NSForegroundColorAttributeName, nil];
-        [vc.navigationController.navigationBar setBackgroundColor:NAVCOLOR];
+        vc.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:17],NSFontAttributeName,DEFAULBLACKCOLOR, NSForegroundColorAttributeName, nil];
+        [vc.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
         //        [vc.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NA_NavigationBar"] forBarMetrics:UIBarMetricsDefault];
         nc.tabBarItem = [[UITabBarItem alloc] initWithTitle:[dic objectForKey:@"title"] image:[UIImage imageNamed:[dic objectForKey:@"icon"]] tag:i];
         nc.tabBarItem.selectedImage=[UIImage imageNamed:[dic objectForKey:@"selectIcon"]];

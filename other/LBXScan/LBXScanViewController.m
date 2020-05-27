@@ -153,9 +153,9 @@
     
     picker.delegate = self;
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSForegroundColorAttributeName] = DEFAULTFONTMAINCOLOR;
+    attrs[NSForegroundColorAttributeName] = DEFAULBLACKCOLOR;
     [picker.navigationBar setTitleTextAttributes:attrs];
-    [[UINavigationBar appearance] setTintColor:DEFAULTFONTMAINCOLOR];
+    [[UINavigationBar appearance] setTintColor:DEFAULBLACKCOLOR];
     
     picker.allowsEditing = YES;
     

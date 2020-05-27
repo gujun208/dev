@@ -20,12 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = DEFAULLIGHTGRAYCOLOR;
-    self.navigationController.navigationBar.tintColor = DEFAULTFONTMAINCOLOR;
+    self.view.backgroundColor = NAVCOLOR;
+    self.navigationController.navigationBar.tintColor = DEFAULBLACKCOLOR;
     [self.navigationController.navigationBar setBackgroundImage:[Tool createImageWithColor:NAVCOLOR] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:17],NSFontAttributeName,DEFAULTFONTMAINCOLOR, NSForegroundColorAttributeName, nil];
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:17],NSFontAttributeName,DEFAULTLINE01COLOR, NSForegroundColorAttributeName, nil];
     if (self.navigationController.viewControllers.count > 1) {
-        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"NA_BackBtn"] style:0 target:self action:@selector(backClick)];
+        UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_nav_back_black"] style:0 target:self action:@selector(backClick)];
         self.navigationItem.leftBarButtonItem = backBtn;
     }
 

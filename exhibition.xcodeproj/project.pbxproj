@@ -76,6 +76,16 @@
 		7AC49FEC247D6F0700CB490C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC49FEE247D6F0700CB490C /* Localizable.strings */; };
 		7AC49FF2247D6FB300CB490C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AC49FF4247D6FB300CB490C /* InfoPlist.strings */; };
 		7AC49FF8247D70C300CB490C /* DAConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC49FF7247D70C300CB490C /* DAConfig.m */; };
+		7AC4A000247E887000CB490C /* ZHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC49FFE247E887000CB490C /* ZHLoginViewController.m */; };
+		7AC4A001247E887000CB490C /* ZHLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC49FFF247E887000CB490C /* ZHLoginViewController.xib */; };
+		7AC4A005247EA40000CB490C /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4A003247EA40000CB490C /* ForgetPasswordViewController.m */; };
+		7AC4A006247EA40000CB490C /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4A004247EA40000CB490C /* ForgetPasswordViewController.xib */; };
+		7AC4A00A247EA84900CB490C /* ZHRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4A008247EA84900CB490C /* ZHRegisteredViewController.m */; };
+		7AC4A00B247EA84900CB490C /* ZHRegisteredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4A009247EA84900CB490C /* ZHRegisteredViewController.xib */; };
+		7AC4A00F247EB07C00CB490C /* ZHAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4A00D247EB07C00CB490C /* ZHAgreementViewController.m */; };
+		7AC4A010247EB07C00CB490C /* ZHAgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4A00E247EB07C00CB490C /* ZHAgreementViewController.xib */; };
+		7AC4A013247EB24000CB490C /* ZHInterestHobbiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4A012247EB24000CB490C /* ZHInterestHobbiesViewController.m */; };
+		7AC4A018247EB37000CB490C /* HobbyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4A017247EB37000CB490C /* HobbyCollectionViewCell.m */; };
 		84D81E00D0BE1032B7CC4166 /* Pods_exhibitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA7D29E5A8531AA1F3A0AAA /* Pods_exhibitionTests.framework */; };
 		F0BFAB4E37970A1B56E24F27 /* Pods_exhibition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CBE710E992B7F3EF93544B /* Pods_exhibition.framework */; };
 /* End PBXBuildFile section */
@@ -240,6 +250,22 @@
 		7AC49FF5247D6FB400CB490C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		7AC49FF6247D70C300CB490C /* DAConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAConfig.h; sourceTree = "<group>"; };
 		7AC49FF7247D70C300CB490C /* DAConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAConfig.m; sourceTree = "<group>"; };
+		7AC49FFD247E887000CB490C /* ZHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLoginViewController.h; sourceTree = "<group>"; };
+		7AC49FFE247E887000CB490C /* ZHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLoginViewController.m; sourceTree = "<group>"; };
+		7AC49FFF247E887000CB490C /* ZHLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLoginViewController.xib; sourceTree = "<group>"; };
+		7AC4A002247EA40000CB490C /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		7AC4A003247EA40000CB490C /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		7AC4A004247EA40000CB490C /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		7AC4A007247EA84900CB490C /* ZHRegisteredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRegisteredViewController.h; sourceTree = "<group>"; };
+		7AC4A008247EA84900CB490C /* ZHRegisteredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRegisteredViewController.m; sourceTree = "<group>"; };
+		7AC4A009247EA84900CB490C /* ZHRegisteredViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHRegisteredViewController.xib; sourceTree = "<group>"; };
+		7AC4A00C247EB07C00CB490C /* ZHAgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAgreementViewController.h; sourceTree = "<group>"; };
+		7AC4A00D247EB07C00CB490C /* ZHAgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAgreementViewController.m; sourceTree = "<group>"; };
+		7AC4A00E247EB07C00CB490C /* ZHAgreementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHAgreementViewController.xib; sourceTree = "<group>"; };
+		7AC4A011247EB24000CB490C /* ZHInterestHobbiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHInterestHobbiesViewController.h; sourceTree = "<group>"; };
+		7AC4A012247EB24000CB490C /* ZHInterestHobbiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHInterestHobbiesViewController.m; sourceTree = "<group>"; };
+		7AC4A016247EB37000CB490C /* HobbyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HobbyCollectionViewCell.h; sourceTree = "<group>"; };
+		7AC4A017247EB37000CB490C /* HobbyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HobbyCollectionViewCell.m; sourceTree = "<group>"; };
 		89A2DA3A4195339846632D4F /* Pods-exhibitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exhibitionTests.debug.xcconfig"; path = "Target Support Files/Pods-exhibitionTests/Pods-exhibitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA7D29E5A8531AA1F3A0AAA /* Pods_exhibitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exhibitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F81E63B50573C40D469686 /* Pods-exhibition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exhibition.release.xcconfig"; path = "Target Support Files/Pods-exhibition/Pods-exhibition.release.xcconfig"; sourceTree = "<group>"; };
@@ -340,6 +366,7 @@
 		7A767392247B8573003E0643 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				7AC49FFC247E883E00CB490C /* 登录 */,
 				7A767397247B87BA003E0643 /* 首页 */,
 				7A767399247B87E7003E0643 /* 我的 */,
 				7A767398247B87E1003E0643 /* 商场 */,
@@ -594,6 +621,45 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		7AC49FFC247E883E00CB490C /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				7AC4A015247EB32E00CB490C /* controller */,
+				7AC4A014247EB30100CB490C /* view */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		7AC4A014247EB30100CB490C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7AC4A016247EB37000CB490C /* HobbyCollectionViewCell.h */,
+				7AC4A017247EB37000CB490C /* HobbyCollectionViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7AC4A015247EB32E00CB490C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AC49FFD247E887000CB490C /* ZHLoginViewController.h */,
+				7AC49FFE247E887000CB490C /* ZHLoginViewController.m */,
+				7AC49FFF247E887000CB490C /* ZHLoginViewController.xib */,
+				7AC4A002247EA40000CB490C /* ForgetPasswordViewController.h */,
+				7AC4A003247EA40000CB490C /* ForgetPasswordViewController.m */,
+				7AC4A004247EA40000CB490C /* ForgetPasswordViewController.xib */,
+				7AC4A007247EA84900CB490C /* ZHRegisteredViewController.h */,
+				7AC4A008247EA84900CB490C /* ZHRegisteredViewController.m */,
+				7AC4A009247EA84900CB490C /* ZHRegisteredViewController.xib */,
+				7AC4A00C247EB07C00CB490C /* ZHAgreementViewController.h */,
+				7AC4A00D247EB07C00CB490C /* ZHAgreementViewController.m */,
+				7AC4A00E247EB07C00CB490C /* ZHAgreementViewController.xib */,
+				7AC4A011247EB24000CB490C /* ZHInterestHobbiesViewController.h */,
+				7AC4A012247EB24000CB490C /* ZHInterestHobbiesViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		E32E5F11080738882584BA86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,11 +793,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC49FC6247D60DC00CB490C /* DNImagePicker.strings in Resources */,
+				7AC4A006247EA40000CB490C /* ForgetPasswordViewController.xib in Resources */,
+				7AC4A010247EB07C00CB490C /* ZHAgreementViewController.xib in Resources */,
+				7AC4A00B247EA84900CB490C /* ZHRegisteredViewController.xib in Resources */,
 				7A7673AD247B8E81003E0643 /* TabBarPList_Other.plist in Resources */,
 				7AC49FC9247D60DC00CB490C /* DNImagePickerController.strings in Resources */,
 				7A76736D247B83D9003E0643 /* LaunchScreen.storyboard in Resources */,
 				7AC49FCE247D60DC00CB490C /* imageResources.xcassets in Resources */,
 				7AC49FEC247D6F0700CB490C /* Localizable.strings in Resources */,
+				7AC4A001247E887000CB490C /* ZHLoginViewController.xib in Resources */,
 				7A76736A247B83D9003E0643 /* Assets.xcassets in Resources */,
 				7AC49FF2247D6FB300CB490C /* InfoPlist.strings in Resources */,
 				7AC49FC8247D60DC00CB490C /* ImagesPicker.xcassets in Resources */,
@@ -864,6 +934,7 @@
 			files = (
 				7AC49FBE247D60DC00CB490C /* LBXScanLineAnimation.m in Sources */,
 				7A76739C247B8819003E0643 /* HomePageViewController.m in Sources */,
+				7AC4A000247E887000CB490C /* ZHLoginViewController.m in Sources */,
 				7AC49FD6247D60DC00CB490C /* DNUnAuthorizedTipsView.m in Sources */,
 				7AC49FCF247D60DC00CB490C /* DNImagePickerController.m in Sources */,
 				7A76735F247B83D5003E0643 /* AppDelegate.m in Sources */,
@@ -878,6 +949,7 @@
 				7AC49F7A247D604E00CB490C /* SDBrowserImageView.m in Sources */,
 				7A8910E4247BC02400E59FF0 /* UITabBar+badge.m in Sources */,
 				7A7673A6247B88B9003E0643 /* TabBarViewController.m in Sources */,
+				7AC4A00F247EB07C00CB490C /* ZHAgreementViewController.m in Sources */,
 				7A767370247B83D9003E0643 /* main.m in Sources */,
 				7A8910DD247BC02400E59FF0 /* CALayer+XibConfiguration.m in Sources */,
 				7A8910DF247BC02400E59FF0 /* UILabel+Adapter.m in Sources */,
@@ -902,7 +974,9 @@
 				7AC49FC2247D60DC00CB490C /* LBXScanResult.m in Sources */,
 				7AC49FC4247D60DC00CB490C /* LBXScanNative.m in Sources */,
 				7A8910DA247BC02400E59FF0 /* UIColor+Hex.m in Sources */,
+				7AC4A018247EB37000CB490C /* HobbyCollectionViewCell.m in Sources */,
 				7AC49FDE247D691400CB490C /* PPNetWork.m in Sources */,
+				7AC4A00A247EA84900CB490C /* ZHRegisteredViewController.m in Sources */,
 				7A8910DB247BC02400E59FF0 /* UIButton+Adapter.m in Sources */,
 				7AC49F60247D592400CB490C /* RootViewController.m in Sources */,
 				7AC49FD5247D60DC00CB490C /* DNBadgeLabel.m in Sources */,
@@ -912,6 +986,7 @@
 				7AC49FBD247D60DC00CB490C /* LBXScanViewStyle.m in Sources */,
 				7AC49FC7247D60DC00CB490C /* DNAsset.m in Sources */,
 				7AC49FF8247D70C300CB490C /* DAConfig.m in Sources */,
+				7AC4A005247EA40000CB490C /* ForgetPasswordViewController.m in Sources */,
 				7AC49FD1247D60DC00CB490C /* DNImageFlowViewController.m in Sources */,
 				7A7673A2247B8842003E0643 /* ShopViewController.m in Sources */,
 				7A76739F247B882F003E0643 /* MyViewController.m in Sources */,
@@ -919,6 +994,7 @@
 				7AC49FCD247D60DC00CB490C /* NSURL+DNIMagePickerUrlEqual.m in Sources */,
 				7A7673AA247B8945003E0643 /* Tool.m in Sources */,
 				7AC49F79247D604E00CB490C /* SDWaitingView.m in Sources */,
+				7AC4A013247EB24000CB490C /* ZHInterestHobbiesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

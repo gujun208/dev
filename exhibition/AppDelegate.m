@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomePageViewController.h"
+#import "ZHLoginViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>//UITabBarControllerDelegate
 
@@ -36,16 +37,16 @@
 - (void)initUI:(NSDictionary *)launchOptions{
    
 //    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"UserManager_userInfo"]) {
-        self.tabbar = [[TabBarViewController alloc] init];
-        self.tabbar.delegate = self;
-        self.window.rootViewController = self.tabbar;
-        self.window.backgroundColor = [UIColor whiteColor];
-        [self.window makeKeyAndVisible];
-//    }else{
-//        LoginViewController *loginVc = [LoginViewController new];
-//        UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:loginVc];
-//        self.window.rootViewController = nc;
+//        self.tabbar = [[TabBarViewController alloc] init];
+//        self.tabbar.delegate = self;
+//        self.window.rootViewController = self.tabbar;
+//        self.window.backgroundColor = [UIColor whiteColor];
 //        [self.window makeKeyAndVisible];
+//    }else{
+        ZHLoginViewController *loginVc = [ZHLoginViewController new];
+        UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:loginVc];
+        self.window.rootViewController = nc;
+        [self.window makeKeyAndVisible];
 //    }
 }
 

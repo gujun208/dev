@@ -14,35 +14,32 @@
 ///默认导航栏颜色(白色)
 #define NAVCOLOR  [UIColor colorWithHexString:@"#ffffff"]
 
-
 ///默认主色（蓝色）
-#define DEFAULBLUECOLOR  [UIColor colorWithHexString:@"#4196ff"]
-///默认主色（浅蓝色）
-#define DEFAULIGHTLBLUECOLOR  [UIColor colorWithHexString:@"#88bdff"]
-///默认主背景色（淡灰色）
-#define DEFAULLIGHTGRAYCOLOR  [UIColor colorWithHexString:@"#f8f8f9"]
-///默认线条颜色（淡灰色）
-#define DEFAULTLINECOLOR  [UIColor colorWithHexString:@"#f2f2f2"]
-///默认常用绿色（绿色）
-#define DEFAULTGREENCOLOR  [UIColor colorWithHexString:@"#39cb49"]
-///默认常用红色（红色）
-#define DEFAULTREDCOLOR  [UIColor colorWithHexString:@"#f64a3f"]
-///默认常用浅蓝色（浅蓝色）
-#define DEFAULTLIFGHTBLUECOLOR  [UIColor colorWithHexString:@"#daebff"]
+#define DEFAULBLUECOLOR  [UIColor colorWithHexString:@"#031272"]
 
-#define DEFAULTTEXTCOLOR  [UIColor colorWithHexString:@"#454545"]
-#define DEFAULTBGCOLOR  [UIColor colorWithHexString:@"#f3f3f3"]
+///默认辅助色（浅绿色）
+#define DEFAULIGHTLGREENCOLOR  [UIColor colorWithHexString:@"#00916E"]
 
-/////默认字号颜色等级
-///1.主内容。 对应14号字体   （黑色）
-#define DEFAULTFONTMAINCOLOR  [UIColor colorWithHexString:@"#31353b"] //rgb（49,53,59）
-///2.次内容a  对应13号字体  （淡黑色）
-#define DEFAULTFONTOTHERACOLOR  [UIColor colorWithHexString:@"#61656b"]
-///3.次内容b  对应13号字体  （淡黑色）
-#define DEFAULTFONTOTHERBCOLOR  [UIColor colorWithHexString:@"#81858a"]
-///4.提示性内容 对应12号字体 （浅黑色）
-#define DEFAULTFONTTIPSCOLOR  [UIColor colorWithHexString:@"#c8cacc"]
+///默认标题，正文（黑色）
+#define DEFAULBLACKCOLOR  [UIColor colorWithHexString:@"#232323"]
 
+#define DEFAULBLACK02COLOR  [UIColor colorWithHexString:@"#333333"]
+
+///默认辅助性文字颜色（淡灰色）
+#define DEFAULTLINE01COLOR  [UIColor colorWithHexString:@"#666666"]
+
+#define DEFAULTLINE02COLOR  [UIColor colorWithHexString:@"#999999"]
+
+#define DEFAULTLINE03COLOR  [UIColor colorWithHexString:@"#BBBBBB"]
+
+///默认线条/边框（淡灰色）
+#define DEFAULTLINECOLOR  [UIColor colorWithHexString:@"#DDDDDD"]
+
+///默认背景框填充色（浅灰色）
+#define DEFAULTREDCOLOR  [UIColor colorWithHexString:@"#F1F1F1"]
+
+
+#define DEFAULTBGCOLOR  [UIColor colorWithHexString:@"#FAFAFA"]
 
 
 
