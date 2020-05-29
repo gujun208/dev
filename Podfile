@@ -16,7 +16,7 @@ target 'exhibition' do
     pod 'YYText'
     pod 'SDCycleScrollView'
     pod 'ZXingObjC',:inhibit_warnings => true
-
+    pod 'SDAutoLayout'
   # Pods for exhibition
 
   target 'exhibitionTests' do
