@@ -20,6 +20,19 @@
 		7A7673A6247B88B9003E0643 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7673A5247B88B9003E0643 /* TabBarViewController.m */; };
 		7A7673AA247B8945003E0643 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7673A9247B8945003E0643 /* Tool.m */; };
 		7A7673AD247B8E81003E0643 /* TabBarPList_Other.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A7673AC247B8E81003E0643 /* TabBarPList_Other.plist */; };
+		7A7C3691247FD9B90058941D /* CycleScrollH5Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C3690247FD9B90058941D /* CycleScrollH5Cell.m */; };
+		7A7C3694247FDCB90058941D /* GYNoticeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C3693247FDCB90058941D /* GYNoticeViewCell.m */; };
+		7A7C369A247FDE4A0058941D /* GYRollingNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C3698247FDE490058941D /* GYRollingNoticeView.m */; };
+		7A7C36A0247FDF0E0058941D /* CycleScrollNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C369F247FDF0E0058941D /* CycleScrollNoticeCell.m */; };
+		7A7C36A3247FDF520058941D /* NoticeNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36A2247FDF520058941D /* NoticeNewsCell.m */; };
+		7A7C36A6247FE8130058941D /* ZHTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36A5247FE8130058941D /* ZHTableHeadView.m */; };
+		7A7C36A9247FEC510058941D /* FunctionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36A8247FEC510058941D /* FunctionTableViewCell.m */; };
+		7A7C36B02480057A0058941D /* ZHExhibitionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36AE2480057A0058941D /* ZHExhibitionListViewController.m */; };
+		7A7C36B12480057A0058941D /* ZHExhibitionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C36AF2480057A0058941D /* ZHExhibitionListViewController.xib */; };
+		7A7C36B524800E780058941D /* ExhibitionNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36B324800E780058941D /* ExhibitionNameCell.m */; };
+		7A7C36B624800E780058941D /* ExhibitionNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C36B424800E780058941D /* ExhibitionNameCell.xib */; };
+		7A7C36BA248023CE0058941D /* ZHExhibitionCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36B8248023CE0058941D /* ZHExhibitionCompanyViewController.m */; };
+		7A7C36BB248023CE0058941D /* ZHExhibitionCompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C36B9248023CE0058941D /* ZHExhibitionCompanyViewController.xib */; };
 		7A8910DA247BC02400E59FF0 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C2247BC02300E59FF0 /* UIColor+Hex.m */; };
 		7A8910DB247BC02400E59FF0 /* UIButton+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C3247BC02300E59FF0 /* UIButton+Adapter.m */; };
 		7A8910DD247BC02400E59FF0 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C7247BC02300E59FF0 /* CALayer+XibConfiguration.m */; };
@@ -139,6 +152,29 @@
 		7A7673A8247B8945003E0643 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		7A7673A9247B8945003E0643 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		7A7673AC247B8E81003E0643 /* TabBarPList_Other.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarPList_Other.plist; sourceTree = "<group>"; };
+		7A7C368F247FD9B90058941D /* CycleScrollH5Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleScrollH5Cell.h; sourceTree = "<group>"; };
+		7A7C3690247FD9B90058941D /* CycleScrollH5Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleScrollH5Cell.m; sourceTree = "<group>"; };
+		7A7C3692247FDCB90058941D /* GYNoticeViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYNoticeViewCell.h; sourceTree = "<group>"; };
+		7A7C3693247FDCB90058941D /* GYNoticeViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYNoticeViewCell.m; sourceTree = "<group>"; };
+		7A7C3698247FDE490058941D /* GYRollingNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYRollingNoticeView.m; sourceTree = "<group>"; };
+		7A7C3699247FDE490058941D /* GYRollingNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYRollingNoticeView.h; sourceTree = "<group>"; };
+		7A7C369E247FDF0E0058941D /* CycleScrollNoticeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleScrollNoticeCell.h; sourceTree = "<group>"; };
+		7A7C369F247FDF0E0058941D /* CycleScrollNoticeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleScrollNoticeCell.m; sourceTree = "<group>"; };
+		7A7C36A1247FDF520058941D /* NoticeNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoticeNewsCell.h; sourceTree = "<group>"; };
+		7A7C36A2247FDF520058941D /* NoticeNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoticeNewsCell.m; sourceTree = "<group>"; };
+		7A7C36A4247FE8130058941D /* ZHTableHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTableHeadView.h; sourceTree = "<group>"; };
+		7A7C36A5247FE8130058941D /* ZHTableHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTableHeadView.m; sourceTree = "<group>"; };
+		7A7C36A7247FEC510058941D /* FunctionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTableViewCell.h; sourceTree = "<group>"; };
+		7A7C36A8247FEC510058941D /* FunctionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTableViewCell.m; sourceTree = "<group>"; };
+		7A7C36AD2480057A0058941D /* ZHExhibitionListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHExhibitionListViewController.h; sourceTree = "<group>"; };
+		7A7C36AE2480057A0058941D /* ZHExhibitionListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHExhibitionListViewController.m; sourceTree = "<group>"; };
+		7A7C36AF2480057A0058941D /* ZHExhibitionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHExhibitionListViewController.xib; sourceTree = "<group>"; };
+		7A7C36B224800E780058941D /* ExhibitionNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExhibitionNameCell.h; sourceTree = "<group>"; };
+		7A7C36B324800E780058941D /* ExhibitionNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExhibitionNameCell.m; sourceTree = "<group>"; };
+		7A7C36B424800E780058941D /* ExhibitionNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExhibitionNameCell.xib; sourceTree = "<group>"; };
+		7A7C36B7248023CE0058941D /* ZHExhibitionCompanyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHExhibitionCompanyViewController.h; sourceTree = "<group>"; };
+		7A7C36B8248023CE0058941D /* ZHExhibitionCompanyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHExhibitionCompanyViewController.m; sourceTree = "<group>"; };
+		7A7C36B9248023CE0058941D /* ZHExhibitionCompanyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHExhibitionCompanyViewController.xib; sourceTree = "<group>"; };
 		7A8910C2247BC02300E59FF0 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		7A8910C3247BC02300E59FF0 /* UIButton+Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Adapter.m"; sourceTree = "<group>"; };
 		7A8910C4247BC02300E59FF0 /* UITextField+Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Adapter.h"; sourceTree = "<group>"; };
@@ -387,8 +423,9 @@
 		7A767397247B87BA003E0643 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				7A76739A247B8819003E0643 /* HomePageViewController.h */,
-				7A76739B247B8819003E0643 /* HomePageViewController.m */,
+				7A7C36AA248004D20058941D /* 功能 */,
+				7A7C368D247FD9450058941D /* controller */,
+				7A7C368C247FD93C0058941D /* view */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -445,6 +482,68 @@
 				7A7673AC247B8E81003E0643 /* TabBarPList_Other.plist */,
 			);
 			path = plist;
+			sourceTree = "<group>";
+		};
+		7A7C368C247FD93C0058941D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C3699247FDE490058941D /* GYRollingNoticeView.h */,
+				7A7C3698247FDE490058941D /* GYRollingNoticeView.m */,
+				7A7C368F247FD9B90058941D /* CycleScrollH5Cell.h */,
+				7A7C3690247FD9B90058941D /* CycleScrollH5Cell.m */,
+				7A7C3692247FDCB90058941D /* GYNoticeViewCell.h */,
+				7A7C3693247FDCB90058941D /* GYNoticeViewCell.m */,
+				7A7C369E247FDF0E0058941D /* CycleScrollNoticeCell.h */,
+				7A7C369F247FDF0E0058941D /* CycleScrollNoticeCell.m */,
+				7A7C36A1247FDF520058941D /* NoticeNewsCell.h */,
+				7A7C36A2247FDF520058941D /* NoticeNewsCell.m */,
+				7A7C36A4247FE8130058941D /* ZHTableHeadView.h */,
+				7A7C36A5247FE8130058941D /* ZHTableHeadView.m */,
+				7A7C36A7247FEC510058941D /* FunctionTableViewCell.h */,
+				7A7C36A8247FEC510058941D /* FunctionTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7A7C368D247FD9450058941D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A76739A247B8819003E0643 /* HomePageViewController.h */,
+				7A76739B247B8819003E0643 /* HomePageViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7A7C36AA248004D20058941D /* 功能 */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C36AC2480050B0058941D /* view */,
+				7A7C36AB248004FC0058941D /* controller */,
+			);
+			path = "功能";
+			sourceTree = "<group>";
+		};
+		7A7C36AB248004FC0058941D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C36AD2480057A0058941D /* ZHExhibitionListViewController.h */,
+				7A7C36AE2480057A0058941D /* ZHExhibitionListViewController.m */,
+				7A7C36AF2480057A0058941D /* ZHExhibitionListViewController.xib */,
+				7A7C36B7248023CE0058941D /* ZHExhibitionCompanyViewController.h */,
+				7A7C36B8248023CE0058941D /* ZHExhibitionCompanyViewController.m */,
+				7A7C36B9248023CE0058941D /* ZHExhibitionCompanyViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7A7C36AC2480050B0058941D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C36B224800E780058941D /* ExhibitionNameCell.h */,
+				7A7C36B324800E780058941D /* ExhibitionNameCell.m */,
+				7A7C36B424800E780058941D /* ExhibitionNameCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		7A8910C1247BC00E00E59FF0 /* category */ = {
@@ -793,6 +892,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC49FC6247D60DC00CB490C /* DNImagePicker.strings in Resources */,
+				7A7C36BB248023CE0058941D /* ZHExhibitionCompanyViewController.xib in Resources */,
+				7A7C36B12480057A0058941D /* ZHExhibitionListViewController.xib in Resources */,
 				7AC4A006247EA40000CB490C /* ForgetPasswordViewController.xib in Resources */,
 				7AC4A010247EB07C00CB490C /* ZHAgreementViewController.xib in Resources */,
 				7AC4A00B247EA84900CB490C /* ZHRegisteredViewController.xib in Resources */,
@@ -803,6 +904,7 @@
 				7AC49FEC247D6F0700CB490C /* Localizable.strings in Resources */,
 				7AC4A001247E887000CB490C /* ZHLoginViewController.xib in Resources */,
 				7A76736A247B83D9003E0643 /* Assets.xcassets in Resources */,
+				7A7C36B624800E780058941D /* ExhibitionNameCell.xib in Resources */,
 				7AC49FF2247D6FB300CB490C /* InfoPlist.strings in Resources */,
 				7AC49FC8247D60DC00CB490C /* ImagesPicker.xcassets in Resources */,
 			);
@@ -942,12 +1044,15 @@
 				7A8910DE247BC02400E59FF0 /* NSLayoutConstraint+IBDesignable.m in Sources */,
 				7AC49FC3247D60DC00CB490C /* LBXScanNetAnimation.m in Sources */,
 				7AC49F68247D5D8B00CB490C /* iToast.m in Sources */,
+				7A7C3691247FD9B90058941D /* CycleScrollH5Cell.m in Sources */,
 				7AC49FE7247D6AFE00CB490C /* PPNetWork+mine.m in Sources */,
 				7AC49FC5247D60DC00CB490C /* LBXZXCapture.m in Sources */,
+				7A7C36A9247FEC510058941D /* FunctionTableViewCell.m in Sources */,
 				7AC49FCA247D60DC00CB490C /* DNAlbumTableViewController.m in Sources */,
 				7AC49FD3247D60DC00CB490C /* DNAssetsViewCell.m in Sources */,
 				7AC49F7A247D604E00CB490C /* SDBrowserImageView.m in Sources */,
 				7A8910E4247BC02400E59FF0 /* UITabBar+badge.m in Sources */,
+				7A7C36A0247FDF0E0058941D /* CycleScrollNoticeCell.m in Sources */,
 				7A7673A6247B88B9003E0643 /* TabBarViewController.m in Sources */,
 				7AC4A00F247EB07C00CB490C /* ZHAgreementViewController.m in Sources */,
 				7A767370247B83D9003E0643 /* main.m in Sources */,
@@ -964,6 +1069,7 @@
 				7AC49FD7247D60DC00CB490C /* MWTapDetectingImageView.m in Sources */,
 				7A8910E0247BC02400E59FF0 /* NSURL+imageUrl.m in Sources */,
 				7AC49FC1247D60DC00CB490C /* LBXScanView.m in Sources */,
+				7A7C36B524800E780058941D /* ExhibitionNameCell.m in Sources */,
 				7AC49F6E247D5F8C00CB490C /* ZHCustomButton.m in Sources */,
 				7AC49FBF247D60DC00CB490C /* LBXScanWrapper.m in Sources */,
 				7A8910E2247BC02400E59FF0 /* UITextField+Adapter.m in Sources */,
@@ -971,16 +1077,21 @@
 				7A8910E3247BC02400E59FF0 /* UIImage +ResizeMagick.m in Sources */,
 				7AC49FD2247D60DC00CB490C /* KKPhotoPickerManager.m in Sources */,
 				7AC49F63247D5B3D00CB490C /* ZHUserModel.m in Sources */,
+				7A7C369A247FDE4A0058941D /* GYRollingNoticeView.m in Sources */,
+				7A7C36A3247FDF520058941D /* NoticeNewsCell.m in Sources */,
 				7AC49FC2247D60DC00CB490C /* LBXScanResult.m in Sources */,
 				7AC49FC4247D60DC00CB490C /* LBXScanNative.m in Sources */,
 				7A8910DA247BC02400E59FF0 /* UIColor+Hex.m in Sources */,
 				7AC4A018247EB37000CB490C /* HobbyCollectionViewCell.m in Sources */,
+				7A7C36A6247FE8130058941D /* ZHTableHeadView.m in Sources */,
 				7AC49FDE247D691400CB490C /* PPNetWork.m in Sources */,
 				7AC4A00A247EA84900CB490C /* ZHRegisteredViewController.m in Sources */,
 				7A8910DB247BC02400E59FF0 /* UIButton+Adapter.m in Sources */,
 				7AC49F60247D592400CB490C /* RootViewController.m in Sources */,
 				7AC49FD5247D60DC00CB490C /* DNBadgeLabel.m in Sources */,
 				7AC49FC0247D60DC00CB490C /* ZXingWrapper.m in Sources */,
+				7A7C3694247FDCB90058941D /* GYNoticeViewCell.m in Sources */,
+				7A7C36BA248023CE0058941D /* ZHExhibitionCompanyViewController.m in Sources */,
 				7AC49FE1247D6AB800CB490C /* PPNetWork+home.m in Sources */,
 				7AC49FBC247D60DC00CB490C /* LBXScanViewController.m in Sources */,
 				7AC49FBD247D60DC00CB490C /* LBXScanViewStyle.m in Sources */,
@@ -992,6 +1103,7 @@
 				7A76739F247B882F003E0643 /* MyViewController.m in Sources */,
 				7AC49F78247D604E00CB490C /* SDPhotoBrowser.m in Sources */,
 				7AC49FCD247D60DC00CB490C /* NSURL+DNIMagePickerUrlEqual.m in Sources */,
+				7A7C36B02480057A0058941D /* ZHExhibitionListViewController.m in Sources */,
 				7A7673AA247B8945003E0643 /* Tool.m in Sources */,
 				7AC49F79247D604E00CB490C /* SDWaitingView.m in Sources */,
 				7AC4A013247EB24000CB490C /* ZHInterestHobbiesViewController.m in Sources */,

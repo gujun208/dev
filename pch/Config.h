@@ -27,6 +27,7 @@
 #import "ZHModel.h"
 #import "DAConfig.h"
 #import "UIScrollView+EmptyDataSet.h"
+#import "ZHCustomButton.h"
 
 //屏幕大小
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

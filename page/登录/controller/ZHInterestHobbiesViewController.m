@@ -76,12 +76,12 @@ static NSString *CHeaderID = @"kHeaderID";
 
 #pragma mark ---- UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 13;
+    return 5;
 }
 /// 返回每个size的大小
 - (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((SCREEN_WIDTH/2.5) *myX6, (SCREEN_WIDTH/3.5) *myX6);
+    return CGSizeMake(155*myX6, 110*myY6);
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {

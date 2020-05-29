@@ -20,7 +20,7 @@
 -(void)setupUI{
     
     self.layer.masksToBounds=YES;
-    self.layer.cornerRadius = 16;
+    self.layer.cornerRadius = 10;
     
     self.bgImageView = [[UIImageView alloc] init];
     self.bgImageView.image = ImageName(@"hobby");
