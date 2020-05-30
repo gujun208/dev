@@ -26,7 +26,7 @@
     UIView *bgview = [[UIView alloc] init];
     bgview.backgroundColor = [UIColor whiteColor];
     bgview.layer.masksToBounds = YES;
-    bgview.layer.cornerRadius = 8.0f;
+    bgview.layer.cornerRadius = 8*myX6;
     [self.contentView addSubview:bgview];
     [bgview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self).with.offset(24);
@@ -42,8 +42,8 @@
     noticeBtn.userInteractionEnabled=NO;
     [noticeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(bgview);
-        make.left.equalTo(bgview).with.offset(10);
-        make.size.mas_equalTo(20);
+        make.left.equalTo(bgview).with.offset(10*myX6);
+        make.size.mas_equalTo(20*myX6);
     }];
 
     _customLab = [[UILabel alloc]init];
@@ -52,9 +52,9 @@
     [bgview addSubview:_customLab];
         [_customLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(noticeBtn);
-            make.leading.equalTo(noticeBtn).with.offset(30);
-            make.trailing.equalTo(bgview).with.offset(-25);
-            make.height.mas_equalTo(20);
+            make.leading.equalTo(noticeBtn).with.offset(30*myX6);
+            make.trailing.equalTo(bgview).with.offset(-25*myX6);
+            make.height.mas_equalTo(20*myY6);
         }];
 
     
@@ -65,7 +65,7 @@
     [arrowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(bgview);
         make.trailing.equalTo(bgview);
-        make.size.mas_equalTo(20);
+        make.size.mas_equalTo(20*myX6);
     }];
 
 }

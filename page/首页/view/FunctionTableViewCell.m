@@ -40,10 +40,10 @@
      // 最小左右间距，默认是10
      flow.minimumInteritemSpacing = 8;
      // 区域内间距，默认是 UIEdgeInsetsMake(0, 0, 0, 0)
-     flow.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+     flow.sectionInset = UIEdgeInsetsMake(10*myX6, 10*myX6, 10*myX6, 10*myX6);
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flow];
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, 15, 16, 15);
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, 15*myX6, 16*myY6, 15*myX6);
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[HobbyCollectionViewCell class] forCellWithReuseIdentifier:@"HobbyCollectionViewCellID"];
     self.collectionView.delegate = self;

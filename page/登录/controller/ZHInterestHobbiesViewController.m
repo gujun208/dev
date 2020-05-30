@@ -32,7 +32,7 @@ static NSString *CHeaderID = @"kHeaderID";
 //     flowLayout.itemSize = CGSizeMake(itemLength, itemLength);
      flowLayout.minimumLineSpacing = 8;
      flowLayout.minimumInteritemSpacing = 20;
-     [flowLayout setSectionInset:UIEdgeInsetsMake(30, 20, 200, 20)];
+     [flowLayout setSectionInset:UIEdgeInsetsMake(30*myX6, 20*myY6, 200*myX6, 20*myY6)];
      self.flowLayout = flowLayout;
      
      _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];

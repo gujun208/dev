@@ -11,7 +11,9 @@
 #import "CycleScrollNoticeCell.h"
 #import "ZHTableHeadView.h"
 #import "FunctionTableViewCell.h"
-#import "ZHExhibitionListViewController.h"
+#import "CycleScrollTopCell.h"
+
+#import "ZHExhibitionsListViewController.h"
 #import "ZHExhibitionCompanyViewController.h"
 
 
@@ -20,7 +22,7 @@
 #define CyclescrollNoticeHeight 82*myY6
 #define CycleCollectionHeight 270*myY6
 
-@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate,UITextFieldDelegate>
+@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate,UITextFieldDelegate,TopScrollDelegate>
 @property (nonatomic, strong) UITableView       * tableview;
 @property (nonatomic, strong) ZHSearchBar       * searchBar;
 
@@ -43,7 +45,6 @@
     self.searchBar.returnKeyType = UIReturnKeySearch;
     self.searchBar.delegate = self;
     self.navigationItem.titleView = self.searchBar;
-    
     
     UIButton *languageButton = [UIButton buttonWithType:UIButtonTypeSystem];
     languageButton.frame = CGRectMake(0, 0, 20, 30);
@@ -95,10 +96,10 @@
         return H5Cell;
 
     }else if (indexPath.section==1){
-        CycleScrollH5Cell *H5Cell = [tableView dequeueReusableCellWithIdentifier:@"CycleScrollH5CellID" forIndexPath:indexPath];
-        H5Cell.delegate=self;
-        [H5Cell reloadH5CellData];
-        return H5Cell;
+        CycleScrollTopCell *itemCell = [tableView dequeueReusableCellWithIdentifier:@"CycleScrollTopCellID" forIndexPath:indexPath];
+        itemCell.delegate=self;
+        [itemCell reloadScrollCellData];
+        return itemCell;
 
     }else if (indexPath.section==2){
         CycleScrollNoticeCell *NoticeCell = [tableView dequeueReusableCellWithIdentifier:@"CycleScrollNoticeCellID" forIndexPath:indexPath];
@@ -148,6 +149,19 @@
 {
     
 }
+#pragma mark 功能item点击事件
+- (void)TapFunctionItemEvent:(NSInteger )tag
+{
+    NSLog(@"----点击的tag为----:%ld",(long)tag);
+    
+    if (tag==1) {
+        ZHExhibitionsListViewController *exhibitionListVC = [ZHExhibitionsListViewController new];
+        exhibitionListVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:exhibitionListVC animated:YES];
+    }
+    
+    
+}
 #pragma mark 更多事件
 - (void)moreEvent:(UIButton *)sender
 {
@@ -155,18 +169,11 @@
     }else if (sender.tag == 4){//展会商场
 
     }else{
-        ZHExhibitionListViewController *exhibitionListVC = [ZHExhibitionListViewController new];
-        exhibitionListVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:exhibitionListVC animated:YES];
 
-//        ZHExhibitionCompanyViewController * companyVC = [ZHExhibitionCompanyViewController new];
-//        companyVC.hidesBottomBarWhenPushed = YES;
-//        [self.navigationController pushViewController:companyVC animated:YES];
     }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    NSLog(@"点击了搜索");
     if (self.searchBar.text.length > 0) {
         [textField resignFirstResponder];
     }else{
@@ -180,6 +187,7 @@
     if (!_tableview) {
         _tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, SCREEN_HEIGHT-10) style:UITableViewStyleGrouped];
         [_tableview registerClass:[CycleScrollH5Cell class] forCellReuseIdentifier:@"CycleScrollH5CellID"];
+        [_tableview registerClass:[CycleScrollTopCell class] forCellReuseIdentifier:@"CycleScrollTopCellID"];
         [_tableview registerClass:[CycleScrollNoticeCell class] forCellReuseIdentifier:@"CycleScrollNoticeCellID"];
         [_tableview registerClass:[FunctionTableViewCell class] forCellReuseIdentifier:@"FunctionTableViewCellID"];
         _tableview.delegate = self;
@@ -189,7 +197,7 @@
             _tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
         }
         if (@available(iOS 10.0, *)) {
-            _tableview.frame = CGRectMake(0, 10, SCREEN_WIDTH, SCREEN_HEIGHT-54);
+            _tableview.frame = CGRectMake(0, 10*myY6, SCREEN_WIDTH, SCREEN_HEIGHT-54);
         }
         [self.view addSubview: _tableview];
     }

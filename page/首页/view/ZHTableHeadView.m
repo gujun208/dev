@@ -27,11 +27,11 @@
     self.leftlabel = [[UILabel alloc] init];
     self.leftlabel.textColor = DEFAULBLACKCOLOR;
     self.leftlabel.text = @"热门资讯";
-    self.leftlabel.font = [UIFont boldSystemFontOfSize:14];
+    self.leftlabel.font = [UIFont boldSystemFontOfSize:14*myX6];
     [self.contentView addSubview:self.leftlabel];
     [self.leftlabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self);
-        make.left.equalTo(self).with.offset(14);
+        make.left.equalTo(self).with.offset(14*myX6);
     }];
     
 //    ZHCustomButton
@@ -42,7 +42,7 @@
     [morebtn addTarget:self action:@selector(ClickMoreBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:morebtn];
     [morebtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(self).with.offset(-14);
+        make.trailing.equalTo(self).with.offset(-14*myX6);
         make.centerY.equalTo(self);
     }];
 
