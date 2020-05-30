@@ -8,6 +8,7 @@
 
 #import "ZHExhibitionsListViewController.h"
 #import "ZHExhibitionListVC.h"
+#import "ExhibitionProductVC.h"
 
 @interface ZHExhibitionsListViewController ()<UITextFieldDelegate,UIScrollViewDelegate>{
     NSUInteger adapter;//适配高度
@@ -55,7 +56,13 @@
     
     adapter = KIsiPhoneX?88:64;
 
-    NSArray * array = @[@"A馆",@"B馆",@"C馆",@"D馆",@"E馆",@"F馆",@"G馆",@"H馆",@"I馆",@"J馆",@"K馆",@"L馆",@"M馆",@"N馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆"];
+    NSArray * array ;
+    if (self.type == ExhibitionList) {
+        array=@[@"A馆",@"B馆",@"C馆",@"D馆",@"E馆",@"F馆",@"G馆",@"H馆",@"I馆",@"J馆",@"K馆",@"L馆",@"M馆",@"N馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆",@"A馆"];
+
+    }else{
+        array = @[@"客户段网络游戏",@"英雄联盟",@"PC单机游戏",@"网页游戏",@"手机游戏",@"微信小游戏",@"客户段网络游戏",@"英雄联盟",@"PC单机游戏"];
+    }
 
     [self.ExcountArray addObjectsFromArray:array];
     
@@ -76,9 +83,17 @@
 - (void)setupChildVces
 {
     for (NSString * title in self.ExcountArray) {
-        ZHExhibitionListVC *hibitionVC = [[ZHExhibitionListVC alloc] init];
-        hibitionVC.title = title;
-        [self addChildViewController:hibitionVC];
+        if (self.type==ExhibitionList) {
+            
+            ZHExhibitionListVC *hibitionVC = [[ZHExhibitionListVC alloc] init];
+            hibitionVC.title = title;
+            [self addChildViewController:hibitionVC];
+
+        }else{
+            ExhibitionProductVC *productVC = [[ExhibitionProductVC alloc] init];
+            productVC.title = title;
+            [self addChildViewController:productVC];
+        }
     }
 }
 
@@ -107,17 +122,47 @@
     contentView.scrollEnabled = YES;
     contentView.showsHorizontalScrollIndicator = NO;
     [self.titlesView insertSubview:contentView atIndex:0];
-    contentView.contentSize = CGSizeMake(24*myX6+(exhibitionWidth+space) *self.ExcountArray.count, 0);
+    if (self.type==ExhibitionList) {
+        contentView.contentSize = CGSizeMake(24*myX6+(exhibitionWidth+space) *self.ExcountArray.count, 0);
+    }else{
+        CGFloat contentW = 24*myX6;
+        for (NSString *title in self.ExcountArray) {
+            CGFloat titleWidth = [Tool calculateRowWidth:title withFont:12*myX6 withHeight:exhibitionHeight];
+            contentW =contentW + titleWidth + 2*space;
+        }
+        contentView.contentSize = CGSizeMake(contentW+10, 0);
+    }
+    
 
     // 内部的子标签
+    CGFloat buttonframeX = 0;
+    CGFloat previousFrameW=0;
     for (NSInteger i = 0; i<self.childViewControllers.count; i++) {
         UIButton *button = [[UIButton alloc] init];
         button.tag = i;
         button.frameHeight = exhibitionHeight;
-        button.frameWidth = exhibitionWidth;
-        button.frameX = 24*myX6 +i * (exhibitionWidth + space);
         button.frameY = (TitleViewHeight -exhibitionHeight)/2;
+
+        //动态计算title宽度
         UIViewController *vc = self.childViewControllers[i];
+        CGFloat titleWidth = [Tool calculateRowWidth:vc.title withFont:12*myX6 withHeight:exhibitionHeight];
+        if (self.type==ExhibitionList) {
+            button.frameWidth = exhibitionWidth;
+            button.frameX = 24*myX6 +i * (exhibitionWidth + space);
+        }else{
+            if (i==0) {
+                buttonframeX = 24*myX6;
+            }else{
+                buttonframeX = buttonframeX + previousFrameW+space;
+            }
+            previousFrameW = titleWidth+space;
+            
+            button.frameWidth = previousFrameW;
+            button.frameX = buttonframeX;
+        }
+        
+
+        
         [button setTitle:vc.title forState:UIControlStateNormal];
         //[button layoutIfNeeded]; // 强制布局(强制更新子控件的frame)
         [button setTitleColor:DEFAULBLUECOLOR forState:UIControlStateNormal];
@@ -209,6 +254,13 @@
     NSInteger index = scrollView.contentOffset.x / scrollView.frameWidth;
     [self titleClick:self.titlesView.subviews[index]];
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 
 - (NSMutableArray *)ExcountArray{
     if (!_ExcountArray) {

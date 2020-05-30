@@ -10,8 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHExhibitionsListViewController : RootViewController
+typedef NS_ENUM(NSInteger, ExhibitionType) {
+    ExhibitionList,
+    ExhibitionProduct,
+};
 
+@interface ZHExhibitionsListViewController : RootViewController
+@property (nonatomic, assign) ExhibitionType type;
 @end
 
 NS_ASSUME_NONNULL_END

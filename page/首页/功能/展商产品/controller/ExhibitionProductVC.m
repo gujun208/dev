@@ -1,24 +1,27 @@
 //
-//  ZHExhibitionListVC.m
+//  ExhibitionProductVC.m
 //  exhibition
 //
 //  Created by 古军 on 2020/5/30.
 //  Copyright © 2020 exhibition. All rights reserved.
 //
 
-#import "ZHExhibitionListVC.h"
-#import "ExhibitionNameCell.h"
+#import "ExhibitionProductVC.h"
+#import "ZHProductCell.h"
+#import "ZHExhibitionProductDteailViewController.h"
 
-@interface ZHExhibitionListVC ()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetDelegate,DZNEmptyDataSetSource>{
+@interface ExhibitionProductVC ()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetDelegate,DZNEmptyDataSetSource>
+{
     NSInteger page;
     NSInteger allPage;
 }
 @property ( nonatomic) UITableView *tableview;
 
 @property (nonatomic, strong) NSMutableArray * dataArray;
+
 @end
 
-@implementation ZHExhibitionListVC
+@implementation ExhibitionProductVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,10 +42,7 @@
     }];
     [self.tableview reloadData];
 
-
-
 }
-
 - (void)endRefresh{
     
     if (self.tableview.mj_header.isRefreshing) {
@@ -55,7 +55,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 120*myX6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -63,12 +63,14 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ExhibitionNameCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitionNameCell"];
+    ZHProductCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ZHProductCell"];
 //    cell.model = self.taskDataArr[indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    ZHExhibitionProductDteailViewController *vc = [ZHExhibitionProductDteailViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -- DZNEmptyDataSetDelegate/DZNEmptyDataSetSource
@@ -121,10 +123,9 @@
 - (UITableView *)tableview{
     if (!_tableview) {
         _tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-100)];
-        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([ExhibitionNameCell class]) bundle:nil] forCellReuseIdentifier:@"ExhibitionNameCell"];
+        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([ZHProductCell class]) bundle:nil] forCellReuseIdentifier:@"ZHProductCell"];
         _tableview.delegate = self;
         _tableview.dataSource = self;
-//        _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
         if (@available(iOS 11.0, *)) {
             _tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
         }
@@ -135,5 +136,6 @@
     }
     return _tableview;
 }
+
 
 @end

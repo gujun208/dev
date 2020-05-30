@@ -12,9 +12,11 @@
 #import "ZHTableHeadView.h"
 #import "FunctionTableViewCell.h"
 #import "CycleScrollTopCell.h"
+#import "ZHExihitionActivityVC.h"
 
 #import "ZHExhibitionsListViewController.h"
-#import "ZHExhibitionCompanyViewController.h"
+#import "ZHMeetingBBSViewController.h"
+#import "ZHCoverContestViewController.h"
 
 
 #define CyclescrollTopHeight 130*myY6
@@ -156,8 +158,26 @@
     
     if (tag==1) {
         ZHExhibitionsListViewController *exhibitionListVC = [ZHExhibitionsListViewController new];
+        exhibitionListVC.type = ExhibitionList;
         exhibitionListVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:exhibitionListVC animated:YES];
+    }else if (tag==2){
+        ZHExhibitionsListViewController *exhibitionListVC = [ZHExhibitionsListViewController new];
+        exhibitionListVC.type = ExhibitionProduct;
+        exhibitionListVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:exhibitionListVC animated:YES];
+    }else if (tag==3){
+        ZHExihitionActivityVC *activityVC = [ZHExihitionActivityVC new];
+        activityVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:activityVC animated:YES];
+    }else if (tag==4){
+        ZHMeetingBBSViewController *BBSVC = [[ZHMeetingBBSViewController alloc] init];
+        BBSVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:BBSVC animated:YES];
+    }else if (tag==5){
+        ZHCoverContestViewController *contestVC = [[ZHCoverContestViewController alloc] init];
+        contestVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:contestVC animated:YES];
     }
     
     
@@ -175,8 +195,6 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     if (self.searchBar.text.length > 0) {
-        [textField resignFirstResponder];
-    }else{
         [textField resignFirstResponder];
     }
     return YES;
