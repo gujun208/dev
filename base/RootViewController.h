@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZHSearchBar.h"
 
 
 typedef NS_ENUM(NSInteger, position_item) {

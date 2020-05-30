@@ -20,8 +20,10 @@
 #define CyclescrollNoticeHeight 82*myY6
 #define CycleCollectionHeight 270*myY6
 
-@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate>
+@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate,UITextFieldDelegate>
 @property (nonatomic, strong) UITableView       * tableview;
+@property (nonatomic, strong) ZHSearchBar       * searchBar;
+
 @end
 
 @implementation HomePageViewController
@@ -37,11 +39,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationItem.title = @"首页";
+    self.searchBar =[ZHSearchBar searchBar:@"输入展商名称"];
+    self.searchBar.returnKeyType = UIReturnKeySearch;
+    self.searchBar.delegate = self;
+    self.navigationItem.titleView = self.searchBar;
     
+    
+    UIButton *languageButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    languageButton.frame = CGRectMake(0, 0, 20, 30);
+    [languageButton setTitle:@"中文/EN" forState:UIControlStateNormal];
+    [languageButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 10,0,-5)];
+    [languageButton setTitleColor:DEFAULIGHTLGREENCOLOR forState:UIControlStateNormal];
+    languageButton.titleLabel.font = font12;
+    languageButton.titleLabel.numberOfLines=2;
+    [languageButton addTarget:self action:@selector(rightBarBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:languageButton];
+    self.navigationItem.rightBarButtonItem = rightItem;
+
     [self.tableview reloadData];
 }
 
+#pragma mark 切换中英文
+- (void)rightBarBtnAction{
+    
+}
 
 #pragma mark tableview
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -110,11 +131,6 @@
         if (!headview) {
             headview = [[ZHTableHeadView alloc]initWithReuseIdentifier:@"ZHTableHeadView"];
         }
-//        if (self.TaskType==1&&self.detailModel.taskStatus==1) {
-//            [finishheadview isHiddenInstructionsTitle:NO];
-//        }else{
-//            [finishheadview isHiddenInstructionsTitle:YES];
-//        }
         headview.tag = section;
         headview.delegate=self;
         return headview;
@@ -148,6 +164,17 @@
 //        [self.navigationController pushViewController:companyVC animated:YES];
     }
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"点击了搜索");
+    if (self.searchBar.text.length > 0) {
+        [textField resignFirstResponder];
+    }else{
+        [textField resignFirstResponder];
+    }
+    return YES;
+}
+
 #pragma mark tableview初始化
 - (UITableView *)tableview{
     if (!_tableview) {
