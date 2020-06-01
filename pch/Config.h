@@ -29,6 +29,7 @@
 #import "UIScrollView+EmptyDataSet.h"
 #import "ZHCustomButton.h"
 #import "PPNetWork.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 //屏幕大小
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

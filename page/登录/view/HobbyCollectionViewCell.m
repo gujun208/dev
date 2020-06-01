@@ -28,7 +28,25 @@
     [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];
+    
+    self.checkImageView = [[UIImageView alloc] init];
+    self.checkImageView.image = ImageName(@"icon_signup_interesting_normal");
+    [self.contentView addSubview:self.checkImageView];
+    [self.checkImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(20*myX6, 20*myX6));
+        make.top.equalTo(self).with.offset(5);
+        make.trailing.equalTo(self).with.offset(-5);
+    }];
 
+    //遮罩层
+    UIView *maskview = [[UIView alloc] init];
+    maskview.backgroundColor = [UIColor blackColor];
+    maskview.alpha=0.3;
+    [self.contentView addSubview:maskview];
+    [maskview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+    
     self.hobbytypeName = [[UILabel alloc] init];
     self.hobbytypeName.font = font14;
     self.hobbytypeName.numberOfLines = 0;
@@ -40,15 +58,7 @@
         make.centerX.equalTo(self);
         make.centerY.equalTo(self);
     }];
-    
-    self.checkImageView = [[UIImageView alloc] init];
-    self.checkImageView.image = ImageName(@"icon_signup_interesting_normal");
-    [self.contentView addSubview:self.checkImageView];
-    [self.checkImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(20*myX6, 20*myX6));
-        make.top.equalTo(self).with.offset(5);
-        make.trailing.equalTo(self).with.offset(-5);
-    }];
+
 
 }
 @end

@@ -17,6 +17,8 @@
 #import "ZHExhibitionsListViewController.h"
 #import "ZHMeetingBBSViewController.h"
 #import "ZHCoverContestViewController.h"
+#import "ZHExihitionGuideViewController.h"
+#import "ZHExihitionPopularInfomationViewController.h"
 
 
 #define CyclescrollTopHeight 130*myY6
@@ -178,6 +180,14 @@
         ZHCoverContestViewController *contestVC = [[ZHCoverContestViewController alloc] init];
         contestVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:contestVC animated:YES];
+    }else if (tag==6){
+        ZHExihitionGuideViewController *guideVC = [ZHExihitionGuideViewController new];
+        guideVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:guideVC animated:YES];
+    }else if (tag==7){
+        ZHExihitionPopularInfomationViewController *popularVC = [ZHExihitionPopularInfomationViewController new];
+        popularVC.hidesBottomBarWhenPushed=YES;
+        [self.navigationController pushViewController:popularVC animated:YES];
     }
     
     

@@ -21,7 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //自定义导航按钮
 - (void)customNavigationItem:(position_item)positionItem title:(NSString *)title backgroundImage:(UIImage *)image action:(SEL)action;
-
+//预览大图
+- (void)lookBigImageWithUrlStr:(NSString *)urlstr;
 @end
 
 NS_ASSUME_NONNULL_END

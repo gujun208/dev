@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "MSSBrowseNetworkViewController.h"
 @interface RootViewController (){
     UILabel *label;
     UIImageView *imageView;
@@ -79,4 +79,15 @@
     }
 }
 
+- (void)lookBigImageWithUrlStr:(NSString *)urlstr{
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    MSSBrowseModel *browseItem = [[MSSBrowseModel alloc]init];
+    [imageView sd_setImageWithURL:[NSURL URLWithString: urlstr] placeholderImage:[UIImage imageNamed:@""]];
+    browseItem.smallImageView = imageView;// 小图
+    browseItem.bigImageUrl = urlstr;// 加载网络图片大图地址
+    MSSBrowseNetworkViewController *bvc = [[MSSBrowseNetworkViewController alloc]initWithBrowseItemArray:@[browseItem] currentIndex:0];
+    [bvc showBrowseViewController];
+
+}
 @end
