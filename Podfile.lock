@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - DYModelMaker (1.0.1)
   - DZNEmptyDataSet (1.8.1)
+  - LBXAlertAction (1.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
   - MJRefresh (3.4.3)
@@ -39,6 +40,7 @@ PODS:
 DEPENDENCIES:
   - DYModelMaker
   - DZNEmptyDataSet
+  - LBXAlertAction
   - Masonry
   - MJExtension
   - MJRefresh
@@ -56,6 +58,7 @@ SPEC REPOS:
     - AFNetworking
     - DYModelMaker
     - DZNEmptyDataSet
+    - LBXAlertAction
     - Masonry
     - MJExtension
     - MJRefresh
@@ -73,6 +76,7 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   DYModelMaker: 9771b176eefc3212492495cab924c551ed93b2da
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  LBXAlertAction: d55188a2debb2bdd88b8d102c1c5552151c9014d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
@@ -86,6 +90,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 4d11ca4a661570bcf896ff6a2b886be90dc327c2
+PODFILE CHECKSUM: df67000b3a15b967bae58d6b2f7ef9f7d6ceb27b
 
 COCOAPODS: 1.9.2

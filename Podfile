@@ -18,6 +18,8 @@ target 'exhibition' do
     pod 'ZXingObjC',:inhibit_warnings => true
     pod 'SDAutoLayout'
     pod 'SDWebImage',:inhibit_warnings => true
+    pod 'LBXAlertAction',:inhibit_warnings => true
+
   # Pods for exhibition
 
   target 'exhibitionTests' do

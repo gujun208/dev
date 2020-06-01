@@ -6,9 +6,9 @@
 		<key>name</key>
 		<string>HomePageViewController</string>
 		<key>icon</key>
-		<string>Home</string>
+		<string>icon_tab_home_normal</string>
 		<key>selectIcon</key>
-		<string>home_select</string>
+		<string>icon_tab_home_pressed</string>
 		<key>title</key>
 		<string>首页</string>
 	</dict>
@@ -16,19 +16,29 @@
 		<key>name</key>
 		<string>ShopViewController</string>
 		<key>icon</key>
-		<string>GongNengGuanLi</string>
+		<string>icon_tab_store_normal</string>
 		<key>selectIcon</key>
-		<string>GongNengGuanLi_select</string>
+		<string>icon_tab_store_pressed</string>
 		<key>title</key>
 		<string>商场</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>ScanViewController</string>
+		<key>icon</key>
+		<string>icon_tab_scan_normal</string>
+		<key>selectIcon</key>
+		<string>icon_tab_scan_pressed</string>
+		<key>title</key>
+		<string>扫一扫</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>MyViewController</string>
 		<key>icon</key>
-		<string>KeHuGuanLi</string>
+		<string>icon_tab_personal_normal</string>
 		<key>selectIcon</key>
-		<string>KeHuGuanLi_select</string>
+		<string>icon_tab_personal_pressed</string>
 		<key>title</key>
 		<string>我的</string>
 	</dict>

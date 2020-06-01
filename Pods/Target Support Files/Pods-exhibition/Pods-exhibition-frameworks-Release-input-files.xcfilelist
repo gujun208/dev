@@ -2,6 +2,7 @@ ${PODS_ROOT}/Target Support Files/Pods-exhibition/Pods-exhibition-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/DYModelMaker/DYModelMaker.framework
 ${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
+${BUILT_PRODUCTS_DIR}/LBXAlertAction/LBXAlertAction.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

@@ -139,6 +139,7 @@
 		7ACDA003248531FD0084EC83 /* MSSBrowseActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD9FF4248531FD0084EC83 /* MSSBrowseActionSheetCell.m */; };
 		7ACDA004248531FD0084EC83 /* mss_browseLoading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD9FF6248531FD0084EC83 /* mss_browseLoading@2x.png */; };
 		7ACDA005248531FD0084EC83 /* UIView+MSSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD9FF7248531FD0084EC83 /* UIView+MSSLayout.m */; };
+		7ACDA00924853C790084EC83 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDA00824853C790084EC83 /* ScanViewController.m */; };
 		84D81E00D0BE1032B7CC4166 /* Pods_exhibitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA7D29E5A8531AA1F3A0AAA /* Pods_exhibitionTests.framework */; };
 		F0BFAB4E37970A1B56E24F27 /* Pods_exhibition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CBE710E992B7F3EF93544B /* Pods_exhibition.framework */; };
 /* End PBXBuildFile section */
@@ -415,6 +416,8 @@
 		7ACD9FF5248531FD0084EC83 /* MSSBrowseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSBrowseModel.h; sourceTree = "<group>"; };
 		7ACD9FF6248531FD0084EC83 /* mss_browseLoading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mss_browseLoading@2x.png"; sourceTree = "<group>"; };
 		7ACD9FF7248531FD0084EC83 /* UIView+MSSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MSSLayout.m"; sourceTree = "<group>"; };
+		7ACDA00724853C790084EC83 /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		7ACDA00824853C790084EC83 /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		89A2DA3A4195339846632D4F /* Pods-exhibitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exhibitionTests.debug.xcconfig"; path = "Target Support Files/Pods-exhibitionTests/Pods-exhibitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA7D29E5A8531AA1F3A0AAA /* Pods_exhibitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exhibitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F81E63B50573C40D469686 /* Pods-exhibition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exhibition.release.xcconfig"; path = "Target Support Files/Pods-exhibition/Pods-exhibition.release.xcconfig"; sourceTree = "<group>"; };
@@ -555,6 +558,7 @@
 		7A767392247B8573003E0643 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				7ACDA00624853C440084EC83 /* 扫一扫 */,
 				7AC49FFC247E883E00CB490C /* 登录 */,
 				7A767397247B87BA003E0643 /* 首页 */,
 				7A767399247B87E7003E0643 /* 我的 */,
@@ -1089,6 +1093,15 @@
 			path = MSSBrowse;
 			sourceTree = "<group>";
 		};
+		7ACDA00624853C440084EC83 /* 扫一扫 */ = {
+			isa = PBXGroup;
+			children = (
+				7ACDA00724853C790084EC83 /* ScanViewController.h */,
+				7ACDA00824853C790084EC83 /* ScanViewController.m */,
+			);
+			path = "扫一扫";
+			sourceTree = "<group>";
+		};
 		E32E5F11080738882584BA86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1467,6 +1480,7 @@
 				7A7A545C2482911C00C43FCA /* ZHProductCell.m in Sources */,
 				7ACDA005248531FD0084EC83 /* UIView+MSSLayout.m in Sources */,
 				7A7673A2247B8842003E0643 /* ShopViewController.m in Sources */,
+				7ACDA00924853C790084EC83 /* ScanViewController.m in Sources */,
 				7A1B40F224826EA200B51DEC /* ZHExhibitionCompanyDetailViewController.m in Sources */,
 				7A76739F247B882F003E0643 /* MyViewController.m in Sources */,
 				7AC49F78247D604E00CB490C /* SDPhotoBrowser.m in Sources */,
