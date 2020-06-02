@@ -36,8 +36,16 @@ PODS:
   - Toast (3.1.0)
   - TZImagePickerController (3.3.1)
   - WechatOpenSDK (1.8.7.1)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
   - YNPageViewController (0.2.6)
   - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
   - YYText (1.0.7)
   - ZXingObjC (3.6.5):
     - ZXingObjC/All (= 3.6.5)
@@ -61,6 +69,7 @@ DEPENDENCIES:
   - Toast (~> 3.0)
   - TZImagePickerController
   - WechatOpenSDK
+  - YBImageBrowser
   - YNPageViewController
   - YYText
   - ZXingObjC
@@ -85,8 +94,10 @@ SPEC REPOS:
     - Toast
     - TZImagePickerController
     - WechatOpenSDK
+    - YBImageBrowser
     - YNPageViewController
     - YYCache
+    - YYImage
     - YYText
     - ZXingObjC
 
@@ -109,11 +120,13 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TZImagePickerController: 99f03b64145a8c92c55b9b1b931410967d9be4cb
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
   YNPageViewController: 33040d429adf0b415d4449ffeec848d8339934ea
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: fd2a8f8a3f4152366037b8446d60f3d9272f25fd
+PODFILE CHECKSUM: 1576a466fdc20bc5017ed992203e790a68c9deb1
 
 COCOAPODS: 1.9.2

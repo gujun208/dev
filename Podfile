@@ -26,6 +26,7 @@ target 'exhibition' do
     pod 'WechatOpenSDK'
     pod 'YNPageViewController'
     pod 'ActionSheetPicker-3.0'
+    pod 'YBImageBrowser'
 
   # Pods for exhibition
 

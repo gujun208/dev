@@ -15,7 +15,9 @@ ${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework
 ${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
+${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
 ${BUILT_PRODUCTS_DIR}/YNPageViewController/YNPageViewController.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
+${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework
 ${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
 ${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework
