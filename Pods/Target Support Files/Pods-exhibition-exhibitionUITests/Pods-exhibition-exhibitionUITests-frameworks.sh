@@ -198,8 +198,11 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DYModelMaker/DYModelMaker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LBXAlertAction/LBXAlertAction.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
@@ -210,14 +213,18 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toast/Toast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YNPageViewController/YNPageViewController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DYModelMaker/DYModelMaker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LBXAlertAction/LBXAlertAction.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
@@ -228,6 +235,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toast/Toast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YNPageViewController/YNPageViewController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"

@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.5.0)
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -14,8 +15,11 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (15.7.4)
   - DYModelMaker (1.0.1)
   - DZNEmptyDataSet (1.8.1)
+  - HMSegmentedControl (1.5.6)
+  - JSONModel (1.8.0)
   - LBXAlertAction (1.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
@@ -31,6 +35,8 @@ PODS:
   - SDWebImage/Core (5.8.0)
   - Toast (3.1.0)
   - TZImagePickerController (3.3.1)
+  - WechatOpenSDK (1.8.7.1)
+  - YNPageViewController (0.2.6)
   - YYCache (1.0.4)
   - YYText (1.0.7)
   - ZXingObjC (3.6.5):
@@ -38,8 +44,12 @@ PODS:
   - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AlipaySDK-iOS
   - DYModelMaker
   - DZNEmptyDataSet
+  - HMSegmentedControl
+  - JSONModel
   - LBXAlertAction
   - Masonry
   - MJExtension
@@ -50,14 +60,20 @@ DEPENDENCIES:
   - SDWebImage
   - Toast (~> 3.0)
   - TZImagePickerController
+  - WechatOpenSDK
+  - YNPageViewController
   - YYText
   - ZXingObjC
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
     - AFNetworking
+    - AlipaySDK-iOS
     - DYModelMaker
     - DZNEmptyDataSet
+    - HMSegmentedControl
+    - JSONModel
     - LBXAlertAction
     - Masonry
     - MJExtension
@@ -68,14 +84,20 @@ SPEC REPOS:
     - SDWebImage
     - Toast
     - TZImagePickerController
+    - WechatOpenSDK
+    - YNPageViewController
     - YYCache
     - YYText
     - ZXingObjC
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 6d79f6f3b98e2b21d218dd65a39f634ff37a27e5
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlipaySDK-iOS: 8659cdb4403de7e5f26ad8b699864a9cbe53384c
   DYModelMaker: 9771b176eefc3212492495cab924c551ed93b2da
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   LBXAlertAction: d55188a2debb2bdd88b8d102c1c5552151c9014d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
@@ -86,10 +108,12 @@ SPEC CHECKSUMS:
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TZImagePickerController: 99f03b64145a8c92c55b9b1b931410967d9be4cb
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  YNPageViewController: 33040d429adf0b415d4449ffeec848d8339934ea
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: df67000b3a15b967bae58d6b2f7ef9f7d6ceb27b
+PODFILE CHECKSUM: fd2a8f8a3f4152366037b8446d60f3d9272f25fd
 
 COCOAPODS: 1.9.2

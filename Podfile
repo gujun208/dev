@@ -19,6 +19,13 @@ target 'exhibition' do
     pod 'SDAutoLayout'
     pod 'SDWebImage',:inhibit_warnings => true
     pod 'LBXAlertAction',:inhibit_warnings => true
+    pod 'JSONModel'
+    pod 'AlipaySDK-iOS'
+    pod 'HMSegmentedControl'
+    pod 'JSONModel'
+    pod 'WechatOpenSDK'
+    pod 'YNPageViewController'
+    pod 'ActionSheetPicker-3.0'
 
   # Pods for exhibition
 
