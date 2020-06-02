@@ -17,7 +17,7 @@
         self.mj_size = CGSizeMake(294*myX6, 36*myY6);
         self.mj_x= 10;
         self.font = [UIFont systemFontOfSize:12 * myX6];
-        self.placeholder = [NSString stringWithFormat:@"        %@",placeholder];
+        self.placeholder = [NSString stringWithFormat:@"%@",placeholder];
         NSMutableAttributedString *arrStr = [[NSMutableAttributedString alloc]initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName : [UIColor lightGrayColor],NSFontAttributeName:[UIFont systemFontOfSize:14 * myX6]}];
         self.attributedPlaceholder = arrStr;
         self.textColor = DEFAULBLACKCOLOR;

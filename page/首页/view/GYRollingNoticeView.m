@@ -58,7 +58,7 @@
 - (void)setupNoticeViews
 {
     self.clipsToBounds = YES;
-    _stayInterval = 2;
+    _stayInterval = 3;
     [self addGestureRecognizer:[self createTapGesture]];
 }
 

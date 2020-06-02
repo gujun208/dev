@@ -67,7 +67,7 @@ static NSString *CHeaderID = @"kHeaderID";
         make.centerX.equalTo(bottomview);
         make.centerY.equalTo(bottomview);
         make.left.equalTo(bottomview).with.offset(24*myX6);
-        make.height.mas_equalTo(48*myY6);
+        make.height.mas_equalTo(48);
     }];
 
 }
@@ -79,7 +79,7 @@ static NSString *CHeaderID = @"kHeaderID";
 /// 返回每个size的大小
 - (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(155*myX6, 110*myY6);
+    return CGSizeMake(155, 110);
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {

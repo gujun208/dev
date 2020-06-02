@@ -9,8 +9,8 @@
 #import "CycleScrollTopCell.h"
 #import "TopBannerView.h"
 #import "CustomIndexTopView.h"
-#define CyclescrollTopHeight 180 * myY6
-#define indicatorViewHeight  20 *myY6
+#define CyclescrollTopHeight 180
+#define indicatorViewHeight  20*myY6
 #define indicatorlblWidth   16*myX6
 @interface CycleScrollTopCell ()<BannerViewDelegate,TapItemDelegate>{
     NSInteger _index;
@@ -46,17 +46,17 @@
 
 - (void)loadLayoutUI{
     if (!self.FunctionView1) {
-        self.FunctionView1 = [CustomIndexTopView customBannerView];
+        self.FunctionView1 = [[CustomIndexTopView alloc] initViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, CyclescrollTopHeight)];
         self.FunctionView1.delegate=self;
     }
     if (!self.FunctionView2) {
-        self.FunctionView2 = [CustomIndexTopView customBannerView];
+        self.FunctionView2 = [[CustomIndexTopView alloc] initViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, CyclescrollTopHeight)];
         self.FunctionView2.delegate=self;
     }
 
     self.bannerview = [[TopBannerView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, CyclescrollTopHeight)];
     self.bannerview.layer.masksToBounds = YES;
-    self.bannerview.layer.cornerRadius  = 10.0f * myX6;
+    self.bannerview.layer.cornerRadius  = 10.0f;
     self.bannerview.bannerdelegate = self;
     WS(weakSelf);
     self.bannerview.ScrollItemBlock = ^(NSInteger index) {

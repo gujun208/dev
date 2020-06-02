@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CustomIndexTopView : UIView
 @property (nonatomic ,weak) id <TapItemDelegate> delegate;
 
-+ (instancetype)customBannerView;
+- (instancetype)initViewWithFrame:(CGRect)frame;
 - (void)CustomBannervalue:(NSArray *)array;
 
 @end

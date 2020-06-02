@@ -13,22 +13,26 @@
 #import "FunctionTableViewCell.h"
 #import "CycleScrollTopCell.h"
 #import "ZHExihitionActivityVC.h"
+#import "ZHSelectDataPopView.h"
 
 #import "ZHExhibitionsListViewController.h"
 #import "ZHMeetingBBSViewController.h"
 #import "ZHCoverContestViewController.h"
 #import "ZHExihitionGuideViewController.h"
 #import "ZHExihitionPopularInfomationViewController.h"
+#import "ZHCheckTitleBar.h"
+#import "ZHContactUsViewController.h"
 
 
 #define CyclescrollTopHeight 130*myY6
-#define CyclescrollCateHeight 200*myY6
+#define CyclescrollCateHeight 200
 #define CyclescrollNoticeHeight 82*myY6
 #define CycleCollectionHeight 270*myY6
 
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate,UITextFieldDelegate,TopScrollDelegate>
-@property (nonatomic, strong) UITableView       * tableview;
-@property (nonatomic, strong) ZHSearchBar       * searchBar;
+@property (nonatomic, strong) UITableView        * tableview;
+@property (nonatomic, strong) ZHCheckTitleBar         * checkBar;
+@property (nonatomic, strong) ZHSelectDataPopView* searchDataPop;
 
 @end
 
@@ -45,10 +49,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.searchBar =[ZHSearchBar searchBar:@"输入展商名称"];
-    self.searchBar.returnKeyType = UIReturnKeySearch;
-    self.searchBar.delegate = self;
-    self.navigationItem.titleView = self.searchBar;
+    self.checkBar = [[ZHCheckTitleBar alloc] init];
+    WS(weakSelf);
+    self.checkBar.TapbarBlock = ^{
+        weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+        [weakSelf.searchDataPop showInView:weakSelf.view];
+    };
+    self.navigationItem.titleView = self.checkBar;
     
     UIButton *languageButton = [UIButton buttonWithType:UIButtonTypeSystem];
     languageButton.frame = CGRectMake(0, 0, 20, 30);
@@ -188,6 +195,10 @@
         ZHExihitionPopularInfomationViewController *popularVC = [ZHExihitionPopularInfomationViewController new];
         popularVC.hidesBottomBarWhenPushed=YES;
         [self.navigationController pushViewController:popularVC animated:YES];
+    }else if (tag==8){
+        ZHContactUsViewController *contactusVC = [ZHContactUsViewController new];
+        contactusVC.hidesBottomBarWhenPushed=YES;
+        [self.navigationController pushViewController:contactusVC animated:YES];
     }
     
     
@@ -201,13 +212,6 @@
     }else{
 
     }
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    if (self.searchBar.text.length > 0) {
-        [textField resignFirstResponder];
-    }
-    return YES;
 }
 
 #pragma mark tableview初始化

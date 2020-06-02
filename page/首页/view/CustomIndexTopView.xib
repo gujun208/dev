@@ -14,34 +14,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85i-Yh-fyY">
-                    <rect key="frame" x="10" y="10" width="355" height="160"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="85i-Yh-fyY" secondAttribute="bottom" constant="10" id="eDb-27-KsX">
+                <constraint firstAttribute="bottom" secondItem="85i-Yh-fyY" secondAttribute="bottom" id="eDb-27-KsX">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </constraint>
-                <constraint firstItem="85i-Yh-fyY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="kbm-aC-e1P">
+                <constraint firstItem="85i-Yh-fyY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kbm-aC-e1P">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </constraint>
-                <constraint firstItem="85i-Yh-fyY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ktB-8X-JHv">
+                <constraint firstItem="85i-Yh-fyY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ktB-8X-JHv">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </constraint>
-                <constraint firstAttribute="trailing" secondItem="85i-Yh-fyY" secondAttribute="trailing" constant="10" id="uS9-ZY-d17">
+                <constraint firstAttribute="trailing" secondItem="85i-Yh-fyY" secondAttribute="trailing" id="uS9-ZY-d17">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </constraint>
             </constraints>

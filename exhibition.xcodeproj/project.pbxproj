@@ -52,6 +52,18 @@
 		7A7C36A9247FEC510058941D /* FunctionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36A8247FEC510058941D /* FunctionTableViewCell.m */; };
 		7A7C36B524800E780058941D /* ExhibitionNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C36B324800E780058941D /* ExhibitionNameCell.m */; };
 		7A7C36B624800E780058941D /* ExhibitionNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C36B424800E780058941D /* ExhibitionNameCell.xib */; };
+		7A7CD36724866BF300E73B07 /* ZHSelelctScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD36624866BF300E73B07 /* ZHSelelctScreenView.m */; };
+		7A7CD36924866C0500E73B07 /* ZHSelelctScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CD36824866C0500E73B07 /* ZHSelelctScreenView.xib */; };
+		7A7CD36C2486729E00E73B07 /* ZHSelectDataPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD36B2486729E00E73B07 /* ZHSelectDataPopView.m */; };
+		7A7CD3702486748500E73B07 /* SearchcontentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD36E2486748500E73B07 /* SearchcontentCell.m */; };
+		7A7CD3712486748500E73B07 /* SearchcontentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CD36F2486748500E73B07 /* SearchcontentCell.xib */; };
+		7A7CD37724867E3600E73B07 /* ZHCheckTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD37624867E3600E73B07 /* ZHCheckTitleBar.m */; };
+		7A7CD37A24868E6E00E73B07 /* ZHJumpSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD37924868E6E00E73B07 /* ZHJumpSearch.m */; };
+		7A7CD37F248693EB00E73B07 /* ZHContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD37E248693EB00E73B07 /* ZHContactUsViewController.m */; };
+		7A7CD382248696A200E73B07 /* ZHContactUsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD381248696A200E73B07 /* ZHContactUsDetailViewController.m */; };
+		7A7CD3872486990800E73B07 /* ZHContactdetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD3852486990800E73B07 /* ZHContactdetailCell.m */; };
+		7A7CD3882486990800E73B07 /* ZHContactdetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CD3862486990800E73B07 /* ZHContactdetailCell.xib */; };
+		7A7CD38B24869A6F00E73B07 /* ZHContactDetailHeadview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CD38A24869A6F00E73B07 /* ZHContactDetailHeadview.m */; };
 		7A8910DA247BC02400E59FF0 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C2247BC02300E59FF0 /* UIColor+Hex.m */; };
 		7A8910DB247BC02400E59FF0 /* UIButton+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C3247BC02300E59FF0 /* UIButton+Adapter.m */; };
 		7A8910DD247BC02400E59FF0 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8910C7247BC02300E59FF0 /* CALayer+XibConfiguration.m */; };
@@ -250,6 +262,27 @@
 		7A7C36B224800E780058941D /* ExhibitionNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExhibitionNameCell.h; sourceTree = "<group>"; };
 		7A7C36B324800E780058941D /* ExhibitionNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExhibitionNameCell.m; sourceTree = "<group>"; };
 		7A7C36B424800E780058941D /* ExhibitionNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExhibitionNameCell.xib; sourceTree = "<group>"; };
+		7A7CD36524866BF300E73B07 /* ZHSelelctScreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSelelctScreenView.h; sourceTree = "<group>"; };
+		7A7CD36624866BF300E73B07 /* ZHSelelctScreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSelelctScreenView.m; sourceTree = "<group>"; };
+		7A7CD36824866C0500E73B07 /* ZHSelelctScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHSelelctScreenView.xib; sourceTree = "<group>"; };
+		7A7CD36A2486729E00E73B07 /* ZHSelectDataPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSelectDataPopView.h; sourceTree = "<group>"; };
+		7A7CD36B2486729E00E73B07 /* ZHSelectDataPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSelectDataPopView.m; sourceTree = "<group>"; };
+		7A7CD36D2486748500E73B07 /* SearchcontentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchcontentCell.h; sourceTree = "<group>"; };
+		7A7CD36E2486748500E73B07 /* SearchcontentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchcontentCell.m; sourceTree = "<group>"; };
+		7A7CD36F2486748500E73B07 /* SearchcontentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchcontentCell.xib; sourceTree = "<group>"; };
+		7A7CD37524867E3600E73B07 /* ZHCheckTitleBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCheckTitleBar.h; sourceTree = "<group>"; };
+		7A7CD37624867E3600E73B07 /* ZHCheckTitleBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCheckTitleBar.m; sourceTree = "<group>"; };
+		7A7CD37824868E6E00E73B07 /* ZHJumpSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHJumpSearch.h; sourceTree = "<group>"; };
+		7A7CD37924868E6E00E73B07 /* ZHJumpSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHJumpSearch.m; sourceTree = "<group>"; };
+		7A7CD37D248693EB00E73B07 /* ZHContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHContactUsViewController.h; sourceTree = "<group>"; };
+		7A7CD37E248693EB00E73B07 /* ZHContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHContactUsViewController.m; sourceTree = "<group>"; };
+		7A7CD380248696A200E73B07 /* ZHContactUsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHContactUsDetailViewController.h; sourceTree = "<group>"; };
+		7A7CD381248696A200E73B07 /* ZHContactUsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHContactUsDetailViewController.m; sourceTree = "<group>"; };
+		7A7CD3842486990800E73B07 /* ZHContactdetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHContactdetailCell.h; sourceTree = "<group>"; };
+		7A7CD3852486990800E73B07 /* ZHContactdetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHContactdetailCell.m; sourceTree = "<group>"; };
+		7A7CD3862486990800E73B07 /* ZHContactdetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHContactdetailCell.xib; sourceTree = "<group>"; };
+		7A7CD38924869A6F00E73B07 /* ZHContactDetailHeadview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHContactDetailHeadview.h; sourceTree = "<group>"; };
+		7A7CD38A24869A6F00E73B07 /* ZHContactDetailHeadview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHContactDetailHeadview.m; sourceTree = "<group>"; };
 		7A8910C2247BC02300E59FF0 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		7A8910C3247BC02300E59FF0 /* UIButton+Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Adapter.m"; sourceTree = "<group>"; };
 		7A8910C4247BC02300E59FF0 /* UITextField+Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Adapter.h"; sourceTree = "<group>"; };
@@ -458,6 +491,10 @@
 			children = (
 				7A1B40D02481371B00B51DEC /* ZHSearchBar.h */,
 				7A1B40D12481371B00B51DEC /* ZHSearchBar.m */,
+				7A7CD37524867E3600E73B07 /* ZHCheckTitleBar.h */,
+				7A7CD37624867E3600E73B07 /* ZHCheckTitleBar.m */,
+				7A7CD37824868E6E00E73B07 /* ZHJumpSearch.h */,
+				7A7CD37924868E6E00E73B07 /* ZHJumpSearch.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -744,6 +781,14 @@
 				7A1B40DE248247B900B51DEC /* functionItem.h */,
 				7A1B40DF248247B900B51DEC /* functionItem.m */,
 				7A1B40E1248247CE00B51DEC /* functionItem.xib */,
+				7A7CD36524866BF300E73B07 /* ZHSelelctScreenView.h */,
+				7A7CD36624866BF300E73B07 /* ZHSelelctScreenView.m */,
+				7A7CD36824866C0500E73B07 /* ZHSelelctScreenView.xib */,
+				7A7CD36A2486729E00E73B07 /* ZHSelectDataPopView.h */,
+				7A7CD36B2486729E00E73B07 /* ZHSelectDataPopView.m */,
+				7A7CD36D2486748500E73B07 /* SearchcontentCell.h */,
+				7A7CD36E2486748500E73B07 /* SearchcontentCell.m */,
+				7A7CD36F2486748500E73B07 /* SearchcontentCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -760,6 +805,7 @@
 		7A7C36AA248004D20058941D /* 功能 */ = {
 			isa = PBXGroup;
 			children = (
+				7A7CD37B2486937A00E73B07 /* 联系我们 */,
 				7ACD9FCA24851FF50084EC83 /* 热门资讯 */,
 				7ACD9FC324851C4D0084EC83 /* 展商指南 */,
 				7A7A546A2482970900C43FCA /* 封面大赛 */,
@@ -791,6 +837,38 @@
 				7A7C36B224800E780058941D /* ExhibitionNameCell.h */,
 				7A7C36B324800E780058941D /* ExhibitionNameCell.m */,
 				7A7C36B424800E780058941D /* ExhibitionNameCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7A7CD37B2486937A00E73B07 /* 联系我们 */ = {
+			isa = PBXGroup;
+			children = (
+				7A7CD383248698C200E73B07 /* view */,
+				7A7CD37C2486938300E73B07 /* controller */,
+			);
+			path = "联系我们";
+			sourceTree = "<group>";
+		};
+		7A7CD37C2486938300E73B07 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A7CD37D248693EB00E73B07 /* ZHContactUsViewController.h */,
+				7A7CD37E248693EB00E73B07 /* ZHContactUsViewController.m */,
+				7A7CD380248696A200E73B07 /* ZHContactUsDetailViewController.h */,
+				7A7CD381248696A200E73B07 /* ZHContactUsDetailViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7A7CD383248698C200E73B07 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7A7CD3842486990800E73B07 /* ZHContactdetailCell.h */,
+				7A7CD3852486990800E73B07 /* ZHContactdetailCell.m */,
+				7A7CD3862486990800E73B07 /* ZHContactdetailCell.xib */,
+				7A7CD38924869A6F00E73B07 /* ZHContactDetailHeadview.h */,
+				7A7CD38A24869A6F00E73B07 /* ZHContactDetailHeadview.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1243,6 +1321,7 @@
 				7AC4A010247EB07C00CB490C /* ZHAgreementViewController.xib in Resources */,
 				7AC4A00B247EA84900CB490C /* ZHRegisteredViewController.xib in Resources */,
 				7ACDA002248531FD0084EC83 /* mss_browseLoading@3x.png in Resources */,
+				7A7CD3882486990800E73B07 /* ZHContactdetailCell.xib in Resources */,
 				7A7673AD247B8E81003E0643 /* TabBarPList_Other.plist in Resources */,
 				7AC49FC9247D60DC00CB490C /* DNImagePickerController.strings in Resources */,
 				7A1B40E2248247CE00B51DEC /* functionItem.xib in Resources */,
@@ -1255,6 +1334,8 @@
 				7AC4A001247E887000CB490C /* ZHLoginViewController.xib in Resources */,
 				7A76736A247B83D9003E0643 /* Assets.xcassets in Resources */,
 				7A7C36B624800E780058941D /* ExhibitionNameCell.xib in Resources */,
+				7A7CD3712486748500E73B07 /* SearchcontentCell.xib in Resources */,
+				7A7CD36924866C0500E73B07 /* ZHSelelctScreenView.xib in Resources */,
 				7AC49FF2247D6FB300CB490C /* InfoPlist.strings in Resources */,
 				7A1B40DD2482209800B51DEC /* CustomIndexTopView.xib in Resources */,
 				7AC49FC8247D60DC00CB490C /* ImagesPicker.xcassets in Resources */,
@@ -1489,10 +1570,14 @@
 				7ACD9FFB248531FD0084EC83 /* MSSBrowseModel.m in Sources */,
 				7A8910DA247BC02400E59FF0 /* UIColor+Hex.m in Sources */,
 				7AC4A018247EB37000CB490C /* HobbyCollectionViewCell.m in Sources */,
+				7A7CD37724867E3600E73B07 /* ZHCheckTitleBar.m in Sources */,
 				7A7C36A6247FE8130058941D /* ZHTableHeadView.m in Sources */,
+				7A7CD37A24868E6E00E73B07 /* ZHJumpSearch.m in Sources */,
 				7AC49FDE247D691400CB490C /* PPNetWork.m in Sources */,
+				7A7CD36724866BF300E73B07 /* ZHSelelctScreenView.m in Sources */,
 				7AC4A00A247EA84900CB490C /* ZHRegisteredViewController.m in Sources */,
 				7ACD9FFD248531FD0084EC83 /* MSSBrowseNetworkViewController.m in Sources */,
+				7A7CD37F248693EB00E73B07 /* ZHContactUsViewController.m in Sources */,
 				7A8910DB247BC02400E59FF0 /* UIButton+Adapter.m in Sources */,
 				7A7A547B24829DB200C43FCA /* ZHLookContestViewController.m in Sources */,
 				7AC49F60247D592400CB490C /* RootViewController.m in Sources */,
@@ -1508,19 +1593,24 @@
 				7ACD9FFE248531FD0084EC83 /* UIImage+MSSScale.m in Sources */,
 				7AC49FBD247D60DC00CB490C /* LBXScanViewStyle.m in Sources */,
 				7AC49FC7247D60DC00CB490C /* DNAsset.m in Sources */,
+				7A7CD3872486990800E73B07 /* ZHContactdetailCell.m in Sources */,
 				7ACD9FF9248531FD0084EC83 /* MSSBrowseLocalViewController.m in Sources */,
 				7ACD9FC824851CA70084EC83 /* ZHExihitionGuideViewController.m in Sources */,
 				7AC49FF8247D70C300CB490C /* DAConfig.m in Sources */,
+				7A7CD38B24869A6F00E73B07 /* ZHContactDetailHeadview.m in Sources */,
 				7AC4A005247EA40000CB490C /* ForgetPasswordViewController.m in Sources */,
 				7AC49FD1247D60DC00CB490C /* DNImageFlowViewController.m in Sources */,
 				7A7A545C2482911C00C43FCA /* ZHProductCell.m in Sources */,
+				7A7CD36C2486729E00E73B07 /* ZHSelectDataPopView.m in Sources */,
 				7ACDA005248531FD0084EC83 /* UIView+MSSLayout.m in Sources */,
 				7A7673A2247B8842003E0643 /* ShopViewController.m in Sources */,
 				7ACDA00924853C790084EC83 /* ScanViewController.m in Sources */,
 				7A1B40F224826EA200B51DEC /* ZHExhibitionCompanyDetailViewController.m in Sources */,
 				7A76739F247B882F003E0643 /* MyViewController.m in Sources */,
+				7A7CD382248696A200E73B07 /* ZHContactUsDetailViewController.m in Sources */,
 				7AC49F78247D604E00CB490C /* SDPhotoBrowser.m in Sources */,
 				7A1B40E524825D4B00B51DEC /* ZHExhibitionsListViewController.m in Sources */,
+				7A7CD3702486748500E73B07 /* SearchcontentCell.m in Sources */,
 				7A7A54652482940700C43FCA /* ZHExihitionActivityVC.m in Sources */,
 				7AC49FCD247D60DC00CB490C /* NSURL+DNIMagePickerUrlEqual.m in Sources */,
 				7A1B40FA24827AB700B51DEC /* ZHExhibitionProductDteailViewController.m in Sources */,

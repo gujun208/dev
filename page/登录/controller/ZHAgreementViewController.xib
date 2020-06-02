@@ -23,12 +23,7 @@
                     <rect key="frame" x="24" y="568" width="327" height="48"/>
                     <color key="backgroundColor" red="0.01176470588" green="0.070588235289999995" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="US8-Fd-IoI">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenW" value="YES"/>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreenH" value="YES"/>
-                            </userDefinedRuntimeAttributes>
-                        </constraint>
+                        <constraint firstAttribute="height" constant="48" id="US8-Fd-IoI"/>
                     </constraints>
                     <state key="normal" title="关闭">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

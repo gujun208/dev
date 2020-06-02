@@ -41,7 +41,7 @@
     //遮罩层
     UIView *maskview = [[UIView alloc] init];
     maskview.backgroundColor = [UIColor blackColor];
-    maskview.alpha=0.3;
+    maskview.alpha=0.4;
     [self.contentView addSubview:maskview];
     [maskview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);

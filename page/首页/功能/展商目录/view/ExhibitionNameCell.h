@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ExhibitionNameCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titlelabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *contentlabel;
+@property (weak, nonatomic) IBOutlet UIImageView *arrow;
+
 @end
 
 NS_ASSUME_NONNULL_END

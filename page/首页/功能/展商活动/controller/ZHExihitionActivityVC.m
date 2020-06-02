@@ -8,6 +8,7 @@
 
 #import "ZHExihitionActivityVC.h"
 #import "ZHProductCell.h"
+#import "ZHJumpSearch.h"
 
 @interface ZHExihitionActivityVC ()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetDelegate,DZNEmptyDataSetSource,UITextFieldDelegate>{
     NSInteger page;
@@ -18,7 +19,8 @@
 
 @property (nonatomic, strong) NSMutableArray * dataArray;
 
-@property (nonatomic, strong) ZHSearchBar       * searchBar;
+@property (nonatomic, strong) ZHJumpSearch       * searchBar;
+
 
 @end
 
@@ -27,9 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.searchBar =[ZHSearchBar searchBar:@"搜索活动"];
-    self.searchBar.returnKeyType = UIReturnKeySearch;
-    self.searchBar.delegate = self;
+    self.searchBar =[[ZHJumpSearch alloc] init];
     self.navigationItem.titleView = self.searchBar;
     
     

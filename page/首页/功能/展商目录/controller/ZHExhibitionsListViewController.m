@@ -9,14 +9,15 @@
 #import "ZHExhibitionsListViewController.h"
 #import "ZHExhibitionListVC.h"
 #import "ExhibitionProductVC.h"
-
+#import "ZHCheckTitleBar.h"
+#import "ZHSelectDataPopView.h"
+#import "ZHJumpSearch.h"
 @interface ZHExhibitionsListViewController ()<UITextFieldDelegate,UIScrollViewDelegate>{
     NSUInteger adapter;//适配高度
 }
 
 @property (nonatomic ,strong) NSMutableArray    * exArr;
 
-@property (nonatomic, strong) ZHSearchBar       * searchBar;
 /* 当前选中的按钮 */
 @property (nonatomic, weak)   UIButton          * selectedButton;
 /* 底部的所有标签 */
@@ -25,6 +26,13 @@
 @property (nonatomic, weak)   UIScrollView      * contentView;
 
 @property (nonatomic, strong) NSMutableArray    * ExcountArray;
+
+@property (nonatomic, strong) ZHCheckTitleBar   * checkBar;
+
+@property (nonatomic, strong) ZHJumpSearch      * jumpBar;
+
+@property (nonatomic, strong) ZHSelectDataPopView* searchDataPop;
+
 @end
 
 #define exhibitionHeight 24*myY6
@@ -38,11 +46,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.searchBar =[ZHSearchBar searchBar:@"BTOC展览会"];
-    self.searchBar.returnKeyType = UIReturnKeySearch;
-    self.searchBar.delegate = self;
-    self.navigationItem.titleView = self.searchBar;
-    
+    if (self.type==ExhibitionProduct) {
+        self.jumpBar = [[ZHJumpSearch alloc] init];
+        WS(weakSelf);
+        self.jumpBar.TapbarBlock = ^{
+            //跳转搜索页面
+        };
+        self.navigationItem.titleView = self.jumpBar;
+
+    }else{
+        self.checkBar = [[ZHCheckTitleBar alloc] init];
+        WS(weakSelf);
+        self.checkBar.TapbarBlock = ^{
+            weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+            [weakSelf.searchDataPop showInView:weakSelf.view];
+        };
+        self.navigationItem.titleView = self.checkBar;
+    }
     
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeSystem];
     searchButton.frame = CGRectMake(0, 0, 20, 30);

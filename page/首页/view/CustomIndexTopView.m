@@ -13,21 +13,30 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @end
 
-#define ItemW (SCREEN_WIDTH - 20*myX6)/5
-#define ItemH 80
+#define ItemW self.contentView.frame.size.width/5 //(SCREEN_WIDTH - 20)/5
+#define ItemH self.contentView.frame.size.height/2
 
 @implementation CustomIndexTopView
 
-+ (instancetype)customBannerView
-{
-    return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+- (instancetype)initViewWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil][0];
+        self.frame = frame;
+    }
+    return self;
 }
+//+ (instancetype)customBannerView
+//{
+//    return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+//}
 
 - (void)CustomBannervalue:(NSArray *)array
 {
     for (int i=0; i<array.count; i++) {
         
         functionItem *item = [functionItem itemView];
+//        item.backgroundColor = [UIColor redColor];
         item.icon.image = ImageName(@"icon_home_apply");
         item.title.text = [NSString stringWithFormat:@"测试%@",array[i]];
         if (i<=4) {
