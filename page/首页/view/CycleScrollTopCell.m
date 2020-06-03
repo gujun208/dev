@@ -17,7 +17,6 @@
 }
 
 @property (nonatomic, strong) TopBannerView *bannerview;
-
 @property (nonatomic, strong) CustomIndexTopView *FunctionView1;
 @property (nonatomic, strong) CustomIndexTopView *FunctionView2;
 

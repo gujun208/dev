@@ -10,8 +10,13 @@
 
 @implementation functionItem
 
-+ (instancetype)itemView
+- (instancetype)initViewWithFrame:(CGRect)frame
 {
-    return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+    self = [super initWithFrame:frame];
+    if (self) {
+        self = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil][0];
+        self.frame = frame;
+    }
+    return self;
 }
 @end

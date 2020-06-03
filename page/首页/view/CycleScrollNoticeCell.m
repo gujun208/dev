@@ -40,7 +40,7 @@
 - (void)initLayoutUI{
     _arr = [NSMutableArray array];
 
-    self.noticeView = [[GYRollingNoticeView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 82*myY6)];
+    self.noticeView = [[GYRollingNoticeView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 82)];
     [self addSubview:self.noticeView];
 
     _noticeView.delegate = self;
@@ -59,14 +59,7 @@
 {
     NoticeNewsCell *cell = [rollingView dequeueReusableCellWithIdentifier:@"NoticeNewsCell"];
     
-//    NIMMessage * message = _arr[index];
-//    if ([message.text isEqualToString:@"暂无通知"]) {
-//        cell.customLab.text = @"暂无通知";
-//        return cell;
-//    }
-    
     NSString *text = _arr[index];
-//    text = [NSString stringWithFormat:@"%@",message.text];
     cell.customLab.text = text;
 //    NSDictionary *attributedDict = @{
 //                                     NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
@@ -82,27 +75,7 @@
 - (void)didClickRollingNoticeView:(GYRollingNoticeView *)rollingView forIndex:(NSUInteger)index
 {
     NSLog(@"点击的index: %d", rollingView.currentIndex);
-//    NIMMessage * message = _arr[index];
-//    if ([message.text isEqualToString:@"暂无通知"]) {
-//        return;
-//    }
-//
-//    if ([self.delegate respondsToSelector:@selector(TopNoticeEvent:)]) {
-//        [self.delegate TopNoticeEvent:message];
-//    }
-
 }
-
-//- (IBAction)handleBtnAction:(UIButton *)sender {
-//    if (_noticeView.status == GYRollingNoticeViewStatusWorking) {
-//        [_noticeView pause];
-//        [sender setTitle:@"resume" forState:UIControlStateNormal];
-//
-//    }else if (_noticeView.status != GYRollingNoticeViewStatusWorking) {
-//        [_noticeView resume];
-//        [sender setTitle:@"pause" forState:UIControlStateNormal];
-//    }
-//}
 
 - (void)dealloc
 {
@@ -130,10 +103,6 @@
         [newArray addObject:array[2]];
     }else if (0<array.count && array.count<3){
         [newArray addObjectsFromArray:array];
-    }else{
-//        NIMMessage * message = [NIMMessage new];
-//        message.text = @"暂无通知";
-//        [newArray addObject:message];
     }
     return newArray;
 }

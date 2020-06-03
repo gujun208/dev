@@ -29,14 +29,6 @@
         make.edges.equalTo(self);
     }];
     
-    self.checkImageView = [[UIImageView alloc] init];
-    self.checkImageView.image = ImageName(@"icon_signup_interesting_normal");
-    [self.contentView addSubview:self.checkImageView];
-    [self.checkImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(20*myX6, 20*myX6));
-        make.top.equalTo(self).with.offset(5);
-        make.trailing.equalTo(self).with.offset(-5);
-    }];
 
     //遮罩层
     UIView *maskview = [[UIView alloc] init];
@@ -57,6 +49,15 @@
     [self.hobbytypeName mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.centerY.equalTo(self);
+    }];
+
+    self.checkImageView = [[UIImageView alloc] init];
+    self.checkImageView.image = ImageName(@"icon_signup_interesting_normal");
+    [self.contentView addSubview:self.checkImageView];
+    [self.checkImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(20*myX6, 20*myX6));
+        make.top.equalTo(self).with.offset(5);
+        make.trailing.equalTo(self).with.offset(-5);
     }];
 
 

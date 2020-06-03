@@ -13,8 +13,10 @@
                 <outlet property="accountTextfield" destination="O6l-NW-BBZ" id="yKj-zY-RKl"/>
                 <outlet property="codeButton" destination="Ghm-rK-aBa" id="ydi-tp-ATJ"/>
                 <outlet property="codeLine" destination="EUw-qU-TbO" id="Fdx-iu-26s"/>
+                <outlet property="codeLoginConstraint" destination="mge-cP-4OU" id="0D8-G2-BjP"/>
                 <outlet property="languageButton" destination="vUL-UM-tGO" id="qD7-73-BZg"/>
                 <outlet property="loginButton" destination="dnS-lU-c7S" id="0ha-Yt-oZb"/>
+                <outlet property="nameloginConstraint" destination="sjY-V8-Tlr" id="IPO-ph-Mtb"/>
                 <outlet property="passwordLabel" destination="cVJ-Mm-MiU" id="rgZ-n4-6OD"/>
                 <outlet property="passwordTextfield" destination="Vpn-sz-yGx" id="60f-PN-Jh2"/>
                 <outlet property="passwordTrailingConstraint" destination="7gr-d3-Z8i" id="QPD-ZI-v7b"/>

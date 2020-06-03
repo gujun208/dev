@@ -29,12 +29,12 @@
              self.titlelbl.textColor = DEFAULTLINE01COLOR;
              self.titlelbl.font = font12;
              [self addSubview:self.titlelbl];
-             self.titlelbl.frame = CGRectMake(10, 2, 240*myX6, 29*myY6);
+             self.titlelbl.frame = CGRectMake(10, 2, 240*myX6, 29);
              
              self.icon = [[UIImageView alloc] init];
              [self.icon setImage:ImageName(@"icon_nar_search_normal")];
              [self addSubview:self.icon];
-             self.icon.frame = CGRectMake(260*myX6, 2, 32, 32);
+             self.icon.frame = CGRectMake(260*myX6, 3, 32, 32);
              
              UIButton *tapbtn = [UIButton buttonWithType:UIButtonTypeCustom];
              [tapbtn addTarget:self action:@selector(tapBar) forControlEvents:UIControlEventTouchUpInside];
@@ -46,7 +46,7 @@
 }
 // 这个重写方法为重点
 - (void)setFrame:(CGRect)frame {
-         [super setFrame:CGRectMake(0, 0, 294*myX6,36*myY6)];
+         [super setFrame:CGRectMake(0, 0, 294*myX6,36)];
 }
 - (void)tapBar{
     if (self.TapbarBlock) {

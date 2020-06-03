@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *tapEvent;
 
-+ (instancetype)itemView;
+//+ (instancetype)itemView;
+- (instancetype)initViewWithFrame:(CGRect)frame;
 
 @end
 

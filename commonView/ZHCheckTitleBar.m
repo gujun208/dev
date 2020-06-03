@@ -30,12 +30,13 @@
              self.titlelbl.textColor = DEFAULTLINE01COLOR;
              self.titlelbl.font = font12;
              [self addSubview:self.titlelbl];
-             self.titlelbl.frame = CGRectMake(10, 2, 240*myX6, 33*myY6);
+             self.titlelbl.frame = CGRectMake(10, 2, 240*myX6, 33);
              
              self.icon = [[UIImageView alloc] init];
              [self.icon setImage:ImageName(@"down arrow small")];
+             self.icon.userInteractionEnabled=NO;
              [self addSubview:self.icon];
-             self.icon.frame = CGRectMake(270*myX6, 12*myY6, 15*myY6, 15*myY6);
+             self.icon.frame = CGRectMake(270*myX6, 12, 15, 15);
              
              UIButton *tapbtn = [UIButton buttonWithType:UIButtonTypeCustom];
              [tapbtn addTarget:self action:@selector(tapBar) forControlEvents:UIControlEventTouchUpInside];
@@ -47,7 +48,7 @@
 }
 // 这个重写方法为重点
 - (void)setFrame:(CGRect)frame {
-         [super setFrame:CGRectMake(0, 0, 294*myX6,40*myY6)];
+         [super setFrame:CGRectMake(0, 0, 294*myX6,40)];
 }
 - (void)tapBar{
     if (self.TapbarBlock) {

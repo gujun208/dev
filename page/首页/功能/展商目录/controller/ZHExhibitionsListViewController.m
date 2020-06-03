@@ -58,20 +58,24 @@
         self.checkBar = [[ZHCheckTitleBar alloc] init];
         WS(weakSelf);
         self.checkBar.TapbarBlock = ^{
-            weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+            if (!weakSelf.searchDataPop) {
+                weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+            }
             [weakSelf.searchDataPop showInView:weakSelf.view];
         };
         self.navigationItem.titleView = self.checkBar;
+        
+        UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        searchButton.frame = CGRectMake(0, 0, 20, 30);
+        [searchButton setImage:ImageName(@"icon_nar_search_normal") forState:UIControlStateNormal];
+        [searchButton addTarget:self action:@selector(SearchBarBtnAction) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:searchButton];
+        self.navigationItem.rightBarButtonItem = rightItem;
+
+        self.view.autoresizesSubviews = NO;
+
     }
     
-    UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    searchButton.frame = CGRectMake(0, 0, 20, 30);
-    [searchButton setImage:ImageName(@"icon_nar_search_normal") forState:UIControlStateNormal];
-    [searchButton addTarget:self action:@selector(SearchBarBtnAction) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:searchButton];
-    self.navigationItem.rightBarButtonItem = rightItem;
-
-    self.view.autoresizesSubviews = NO;
 
     
     adapter = KIsiPhoneX?88:64;
@@ -97,6 +101,9 @@
 
 }
 
+- (void)SearchBarBtnAction{
+    
+}
 /**
  * 初始化子控制器
  */

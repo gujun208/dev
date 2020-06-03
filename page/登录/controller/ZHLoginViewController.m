@@ -38,6 +38,9 @@
 //约束
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *passwordTrailingConstraint;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *nameloginConstraint;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *codeLoginConstraint;
 
 @end
 
@@ -66,6 +69,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    if (iPhone5) {
+        self.nameloginConstraint.constant=100;
+        self.codeLoginConstraint.constant=100;
+    }
 }
 
 

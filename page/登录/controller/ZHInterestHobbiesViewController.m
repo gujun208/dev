@@ -27,13 +27,19 @@ static NSString *CHeaderID = @"kHeaderID";
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"兴趣爱好";
 
-     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-     flowLayout.minimumLineSpacing = 8;
-     flowLayout.minimumInteritemSpacing = 20;
-     [flowLayout setSectionInset:UIEdgeInsetsMake(30*myX6, 20*myY6, 200*myX6, 20*myY6)];
-     self.flowLayout = flowLayout;
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake(150*myX6, 110*myY6);
+    // 以最小间距为10计算间距
+    // 每行可放多少 cell
+    NSInteger nCountCell = (SCREEN_WIDTH - 10) / (layout.itemSize.width + 10);
+    // 平均后的间距
+    CGFloat fSpacing = (SCREEN_WIDTH - layout.itemSize.width * nCountCell) / (nCountCell + 1);
+    layout.minimumInteritemSpacing = fSpacing-5;
+    layout.minimumLineSpacing = fSpacing-5;
+    layout.sectionInset = UIEdgeInsetsMake(fSpacing-5, fSpacing-5, 200, fSpacing-5);
+     self.flowLayout = layout;
      
-     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
      [self.collectionView registerClass:[HobbyCollectionViewCell class] forCellWithReuseIdentifier:@"HobbyCollectionViewCellID"];
      _collectionView.delegate = self;
      _collectionView.dataSource = self;
@@ -76,11 +82,7 @@ static NSString *CHeaderID = @"kHeaderID";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 5;
 }
-/// 返回每个size的大小
-- (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return CGSizeMake(155, 110);
-}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     HobbyCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"HobbyCollectionViewCellID" forIndexPath:indexPath];

@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A63D9089-45F1-41BF-AFCF-821E580FDF97"
+            uuid = "EF745A59-BB51-4181-890D-001D52D7D75C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "page/&#x9996;&#x9875;/&#x529f;&#x80fd;/&#x5c55;&#x5546;&#x4ea7;&#x54c1;/controller/ExhibitionProductVC.m"
+            filePath = "page/&#x9996;&#x9875;/&#x529f;&#x80fd;/&#x5c55;&#x5546;&#x76ee;&#x5f55;/controller/ZHExhibitionsListViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

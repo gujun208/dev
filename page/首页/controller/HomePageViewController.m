@@ -26,7 +26,7 @@
 
 #define CyclescrollTopHeight 130*myY6
 #define CyclescrollCateHeight 200
-#define CyclescrollNoticeHeight 82*myY6
+#define CyclescrollNoticeHeight 82
 #define CycleCollectionHeight 270*myY6
 
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,TopScrollH5Delegate,TopScrollNoticeDelegate,CollectionSelectDelegate,HeadMoreDelegate,UITextFieldDelegate,TopScrollDelegate>
@@ -52,8 +52,12 @@
     self.checkBar = [[ZHCheckTitleBar alloc] init];
     WS(weakSelf);
     self.checkBar.TapbarBlock = ^{
-        weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+        
+        if (!weakSelf.searchDataPop) {
+            weakSelf.searchDataPop = [[ZHSelectDataPopView alloc] init];
+        }
         [weakSelf.searchDataPop showInView:weakSelf.view];
+
     };
     self.navigationItem.titleView = self.checkBar;
     
@@ -139,12 +143,14 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section==3 || section==4) {
+        
         ZHTableHeadView * headview = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"ZHTableHeadView"];
         if (!headview) {
             headview = [[ZHTableHeadView alloc]initWithReuseIdentifier:@"ZHTableHeadView"];
         }
         headview.tag = section;
         headview.delegate=self;
+        [headview setHeadviewTitle:section==3 ? @"热门资讯" :@"展会商场"];
         return headview;
 
     }
